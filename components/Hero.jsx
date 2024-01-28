@@ -3,8 +3,8 @@ import React from "react";
 export default function Hero() {
   return (
     <div className="mx-auto max-w-7xl tb">
-      <div className="flex items-center justify-center  h-screen ">
-        <div className="">
+      <div className="flex items-center justify-center gap-5 h-screen ">
+        <div className="space-y-10">
           <h1 className="text-4xl font-bold">Hallo! I am Taib Islam,</h1>
           <p className="text-2xl">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas
