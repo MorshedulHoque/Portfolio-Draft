@@ -1,4 +1,3 @@
-import React from "react";
 import HeroImage from "../public/taib-islam-color-blue.png";
 import Image from "next/image";
 import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
@@ -9,9 +8,12 @@ export default function Hero() {
   return (
     <div className="wrapper">
       <div className="flex items-center justify-center gap-5 h-screen">
-        <div className="space-y-10 flex-1 ">
+        <div className="space-y-10 flex-1 animate__animated animate__fadeInUp animate__slow-1s">
           <div>
-            <h1 className="text-7xl font-bold leading-tight">Taib Islam</h1>
+            <h1 className="text-7xl font-bold leading-tight">
+              Taib Islam
+              <span className="text-[#00E5A4]">_</span>
+            </h1>
             <h2 className="text-4xl leading-tight">Software Engineer</h2>
           </div>
           <p className="text-2xl">
@@ -30,7 +32,11 @@ export default function Hero() {
           {/* <button>view project</button> */}
         </div>
 
-        <div className="flex-1  flex items-end justify-end">
+        <div
+          className="flex-1  flex items-end justify-end animate__animated animate__zoomIn animate__slow"
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+        >
           <Image
             className="rounded-full"
             src={HeroImage}

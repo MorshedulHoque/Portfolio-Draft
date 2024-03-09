@@ -6,7 +6,11 @@ export default function Experience(props) {
     props.experience;
 
   return (
-    <div className="grid col-span-1 gap-5 lg:grid-cols-3">
+    <div
+      className="grid col-span-1 gap-5 lg:grid-cols-3"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
       <div className="col-span-1 ">
         <span>{timeRange}</span>
       </div>
