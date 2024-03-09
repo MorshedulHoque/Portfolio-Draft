@@ -4,10 +4,10 @@ import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
-    <>
+    <div className="space-y-20">
       <Hero />
       <Experiences />
       <Projects />
-    </>
+    </div>
   );
 }
