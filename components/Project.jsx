@@ -40,7 +40,7 @@ export default function Project() {
         </div>
         <div className="col-span-3 md:col-span-2 bg-[url('/shape/shape-1.png')] bg-no-repeat bg-right-bottom lg:pt-16 lg:pl-10 p-4 space-y-4">
           <h3 className="text-base lg:text-4xl font-bold max-w-[270px] dark:text-white">
-            BZM Graphics
+            Creative Studio
           </h3>
           <div>
             <a

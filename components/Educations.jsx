@@ -12,7 +12,7 @@ import Image from "next/image";
 export default function Educations() {
   return (
     <div className="wrapper space-y-20" id="education">
-      <h2 className="text-2xl font-bold text-[#fff] border-b border-[#3C4B55] pb-2">
+      <h2 className="text-2xl font-bold border-b border-[#3C4B55] pb-2">
         Education
       </h2>
 

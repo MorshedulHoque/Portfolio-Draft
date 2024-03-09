@@ -3,7 +3,7 @@ import Project from "./Project";
 export default function Projects() {
   return (
     <div className="wrapper space-y-20">
-      <h2 className="text-2xl font-bold text-[#fff] border-b border-[#3C4B55] pb-2">
+      <h2 className="text-2xl font-bold border-b border-[#3C4B55] pb-2">
         Projects
       </h2>
 
@@ -37,7 +37,7 @@ export default function Projects() {
           <div className="space-lg">
             <div>
               <h3 className="text-base lg:text-2xl font-bold text-white">
-                BZM Graphics
+                Creative Studio
               </h3>
 
               <a
