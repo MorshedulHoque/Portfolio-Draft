@@ -7,10 +7,10 @@ export default function Experience(props) {
 
   return (
     <div className="grid col-span-1 gap-5 lg:grid-cols-3">
-      <div className="col-span-1 tb">
+      <div className="col-span-1 ">
         <span>{timeRange}</span>
       </div>
-      <div className="col-span-2 tb">
+      <div className="col-span-2 ">
         <div className="space-md">
           <div className="flex items-center gap-5">
             <NextImage src={logo} width={80} height={80} />

@@ -1,11 +1,13 @@
 import Experiences from "@/components/Experiences";
 import Hero from "@/components/Hero";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Hero />
       <Experiences />
-    </div>
+      <Projects />
+    </>
   );
 }

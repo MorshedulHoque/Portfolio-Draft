@@ -1,21 +1,43 @@
 import React from "react";
+import HeroImage from "../public/taib-islam-color-blue.png";
+import Image from "next/image";
+import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
+import { FaMedium } from "react-icons/fa6";
 
 export default function Hero() {
   return (
     <div className="mx-auto max-w-7xl tb">
-      <div className="flex items-center justify-center gap-5 h-screen ">
-        <div className="space-y-10">
-          <h1 className="text-4xl font-bold">Hallo! I am Taib Islam,</h1>
+      <div className="flex items-center justify-center gap-5 h-screen px-20">
+        <div className="space-y-10 flex-1 ">
+          <div>
+            <h1 className="text-7xl font-bold leading-tight">Taib Islam</h1>
+            <h2 className="text-4xl leading-tight">Software Engineer</h2>
+          </div>
           <p className="text-2xl">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas
-            vero, iure fugit ut delectus quis?
+            I&apos;m a front-end developer passionate about building accessible
+            web apps that users love.
           </p>
 
-          <button>view project</button>
+          <div className="flex gap-3">
+            <FaFacebook size={23} />
+            <FaLinkedin size={23} />
+            <FaGithub size={23} />
+            <SiLeetcode size={23} />
+            <FaMedium size={23} />
+          </div>
+
+          {/* <button>view project</button> */}
         </div>
 
-        <div className="">
-          <img src="https://via.placeholder.com/550x550" alt="" />
+        <div className="flex-1  flex items-end justify-end">
+          <Image
+            className="rounded-full"
+            src={HeroImage}
+            alt="Taib Islam"
+            width={350}
+            height={350}
+          />
         </div>
       </div>
     </div>

@@ -1,5 +1,7 @@
-import React from "react";
-
 export default function Projects() {
-  return <div>Projects</div>;
+  return (
+    <div className="wrapper tb space-lg">
+      <h2 className="">Projects</h2>
+    </div>
+  );
 }
