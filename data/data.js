@@ -73,3 +73,18 @@ export const educationData = [
     skills: [],
   },
 ];
+
+export const techLogo = [
+  { id: 1, name: "JavaScript", srcUrl: "/logo/javascript.png" },
+  { id: 2, name: "React", srcUrl: "/logo/react.png" },
+  { id: 3, name: "Next.js", srcUrl: "/logo/next-js.png" },
+  { id: 4, name: "Tailwind CSS", srcUrl: "/logo/tailwindcss.png" },
+  { id: 5, name: "Redux", srcUrl: "/logo/redux.webp" },
+  { id: 6, name: "Express.js", srcUrl: "/logo/express-js.webp" },
+  { id: 7, name: "Mongoose", srcUrl: "/logo/mongoose.jpg" },
+  { id: 8, name: "MongoDB", srcUrl: "/logo/mongo-db.png" },
+  { id: 9, name: "Node.js", srcUrl: "/logo/nodejs.png" },
+  { id: 10, name: "HTML", srcUrl: "/logo/html.png" },
+  { id: 11, name: "CSS", srcUrl: "/logo/css.png" },
+  { id: 12, name: "Bootstrap", srcUrl: "/logo/bootstrap.png" },
+];
