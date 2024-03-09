@@ -1,4 +1,5 @@
 import { techLogo } from "@/data/data";
+import Image from "next/image";
 
 export default function Skills() {
   return (
@@ -11,12 +12,14 @@ export default function Skills() {
         {techLogo.map((data) => (
           <div
             key={data.id}
-            className="w-full h-40 bg-gray-500/[.06] flex gap-4 flex-col items-center justify-center"
+            className="w-full h-40 bg-gray-500/[.06] flex gap-4 flex-col items-center justify-center rounded"
           >
-            <img
-              className="object-contain w-20 h-20"
+            <Image
+              className="object-contain"
               src={`${data.srcUrl}`}
               alt={`${data.name}`}
+              width={80}
+              height={80}
             />
             <p>{data.name}</p>
           </div>

@@ -10,6 +10,10 @@
   background-color: rgb(254 202 202);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @apply bg-color1 text-white;
 }
