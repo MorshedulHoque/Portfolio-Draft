@@ -12,19 +12,19 @@ export default function Projects() {
           <div className="h-[350px] bg-gray-100">video</div>
           <div className="space-lg">
             <div>
-              <h3 className="text-base lg:text-2xl font-bold dark:text-white">
+              <h3 className="text-base lg:text-2xl font-bold text-white">
                 BZM Graphics
               </h3>
 
               <a
-                className="hover:underline flex gap-x-2 items-center transition dark:text-white hover:text-secondary"
+                className="hover:underline flex gap-x-2 items-center transition text-white hover:text-secondary"
                 href="#"
                 title="Visit Website"
               >
                 VISIT WEBSITE
               </a>
             </div>
-            <div className="flex gap-5 whitespace-nowrap flex-wrap justify-center lg:justify-start">
+            <div className="flex gap-5 whitespace-nowrap flex-wrap justify-center lg:justify-start text-white ">
               <span>Next.js</span>
               <span>Next.js</span>
               <span>Next.js</span>
@@ -36,19 +36,19 @@ export default function Projects() {
           <div className="h-[350px] bg-gray-100">video</div>
           <div className="space-lg">
             <div>
-              <h3 className="text-base lg:text-2xl font-bold dark:text-white">
+              <h3 className="text-base lg:text-2xl font-bold text-white">
                 BZM Graphics
               </h3>
 
               <a
-                className="hover:underline flex gap-x-2 items-center transition dark:text-white hover:text-secondary"
+                className="hover:underline flex gap-x-2 items-center transition text-white hover:text-secondary"
                 href="#"
                 title="Visit Website"
               >
                 VISIT WEBSITE
               </a>
             </div>
-            <div className="flex gap-5 whitespace-nowrap flex-wrap justify-center lg:justify-start">
+            <div className="flex gap-5 whitespace-nowrap flex-wrap justify-center lg:justify-start text-white ">
               <span>Next.js</span>
               <span>Next.js</span>
               <span>Next.js</span>
