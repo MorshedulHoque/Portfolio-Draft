@@ -7,8 +7,8 @@ import { FaMedium } from "react-icons/fa6";
 
 export default function Hero() {
   return (
-    <div className="mx-auto max-w-7xl tb">
-      <div className="flex items-center justify-center gap-5 h-screen px-20">
+    <div className="wrapper">
+      <div className="flex items-center justify-center gap-5 h-screen">
         <div className="space-y-10 flex-1 ">
           <div>
             <h1 className="text-7xl font-bold leading-tight">Taib Islam</h1>

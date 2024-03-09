@@ -1,6 +1,6 @@
 export default function Projects() {
   return (
-    <div className="wrapper tb space-lg">
+    <div className="wrapper space-lg">
       <h2 className="">Projects</h2>
     </div>
   );
