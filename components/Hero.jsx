@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <div className="wrapper">
       <div className="flex items-center justify-center gap-5 h-screen">
-        <div className="space-y-10 flex-1 animate__animated animate__fadeInUp animate__slow-1s">
+        <div className="space-y-10 flex-1">
           <div>
             <h1 className="text-7xl font-bold leading-tight">
               Taib Islam
@@ -21,19 +21,19 @@ export default function Hero() {
             web apps that users love.
           </p>
 
-          <div className="flex gap-3">
-            <FaFacebook size={23} />
-            <FaLinkedin size={23} />
-            <FaGithub size={23} />
-            <SiLeetcode size={23} />
-            <FaMedium size={23} />
+          <div className="flex gap-5">
+            <FaLinkedin size={30} />
+            <FaGithub size={30} />
+            <FaFacebook size={30} />
+            <SiLeetcode size={30} />
+            <FaMedium size={30} />
           </div>
 
           {/* <button>view project</button> */}
         </div>
 
         <div
-          className="flex-1  flex items-end justify-end animate__animated animate__zoomIn animate__slow"
+          className="flex-1  flex items-end justify-end"
           data-aos="zoom-in"
           data-aos-duration="2000"
         >

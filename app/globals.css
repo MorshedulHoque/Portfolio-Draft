@@ -25,9 +25,70 @@ body {
   @apply mx-auto max-w-7xl lg:px-20 px-4;
 }
 
+.wrapper-lg {
+  /* @apply mx-auto max-w-7xl py-10 lg:py-20 lg:px-20 px-4; */
+  @apply mx-auto max-w-[1600px] lg:px-20 px-4;
+}
+
 .space-md {
   @apply space-y-5;
 }
 .space-lg {
   @apply space-y-10;
 }
+
+/* button css start*/
+.arrow-button {
+  display: flex;
+  color: #c2ffe9;
+  background-color: #000e38;
+  padding: 14px 20px;
+  border-radius: 26px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  cursor: pointer;
+  align-items: center;
+  font-size: 16px;
+}
+
+.arrow-button > .arrow {
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid #c2ffe9;
+  border-bottom: 2px solid #c2ffe9;
+  position: relative;
+  transform: rotate(-45deg);
+  margin: 0 6px;
+  transition: all 0.3s ease;
+}
+
+.arrow-button > .arrow::before {
+  display: block;
+  background-color: currentColor;
+  width: 3px;
+  transform-origin: bottom right;
+  height: 2px;
+  position: absolute;
+  opacity: 0;
+  bottom: calc(-2px / 2);
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+  content: "";
+  right: 0;
+}
+
+.arrow-button:hover > .arrow {
+  transform: rotate(-45deg) translate(4px, 4px);
+  border-color: text-hover-color;
+}
+
+.arrow-button:hover > .arrow::before {
+  opacity: 1;
+  width: 8px;
+}
+
+.arrow-button:hover {
+  background-color: #012eb4;
+  color: #fff;
+}
+/* button css emd*/
