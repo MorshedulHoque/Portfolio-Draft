@@ -12,14 +12,14 @@ export default function Skills() {
         {techLogo.map((data) => (
           <div
             key={data.id}
-            className="w-full h-40 bg-gray-500/[.06] flex gap-4 flex-col items-center justify-center rounded"
+            className="w-full h-40 shadow-md border rounded-md bg-gray-500/[.06] flex gap-4 flex-col items-center justify-center"
           >
             <Image
               className="object-contain"
               src={`${data.srcUrl}`}
               alt={`${data.name}`}
-              width={80}
-              height={80}
+              width={70}
+              height={70}
             />
             <p>{data.name}</p>
           </div>
