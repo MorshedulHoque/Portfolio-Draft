@@ -92,3 +92,9 @@ body {
   color: #fff;
 }
 /* button css emd*/
+
+/* vertical-timeline start  */
+.vertical-timeline-element-icon {
+  background-color: #000e38 !important;
+}
+/* vertical-timeline end  */
