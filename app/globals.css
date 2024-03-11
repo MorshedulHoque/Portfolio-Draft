@@ -98,3 +98,29 @@ body {
   background-color: #000e38 !important;
 }
 /* vertical-timeline end  */
+
+/* hover underline effect start */
+.custom-underline-effect {
+  display: inline-block;
+  position: relative;
+
+  text-decoration: none;
+}
+.custom-underline-effect::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  border-radius: 5px;
+  height: 0.05em;
+  bottom: 0;
+  left: 0;
+  background: currentcolor;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.custom-underline-effect:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/* hover underline effect end */

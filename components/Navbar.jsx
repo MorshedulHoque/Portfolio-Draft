@@ -1,7 +1,7 @@
 export default function Navbar() {
   return (
     <div className="">
-      <header className="flex fixed top-0 flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-yellow-50 text-sm py-6 dark:bg-gray-800">
+      <header className="flex fixed top-0 flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full backdrop-blur-md bg-white/30 text-sm py-6 dark:bg-gray-800">
         <nav
           className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
           aria-label="Global"
@@ -61,29 +61,17 @@ export default function Navbar() {
           >
             <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
               <a
-                className="font-medium text-blue-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                href="#"
-                aria-current="page"
-              >
-                Landing
-              </a>
-              <a
                 className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                 href="#"
-              >
-                Account
+              ></a>
+              <a className="font-medium custom-underline-effect" href="#">
+                Blog
               </a>
-              <a
-                className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                href="#"
-              >
+              <a className="font-medium custom-underline-effect" href="#">
                 Work
               </a>
-              <a
-                className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                href="#"
-              >
-                Blog
+              <a className="font-medium custom-underline-effect" href="#">
+                Resume
               </a>
             </div>
           </div>
