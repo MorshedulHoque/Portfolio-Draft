@@ -1,20 +1,20 @@
-import HeroImage from "../public/taib-islam-color-blue.png";
 import Image from "next/image";
-import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaMedium } from "react-icons/fa6";
+import { SiLeetcode } from "react-icons/si";
+import HeroImage from "../public/taib-islam-color-blue.png";
 
 export default function Hero() {
   return (
-    <div className="wrapper">
-      <div className="flex items-center justify-center gap-5 h-screen">
+    <div className="wrapper lg:py-24 py-12">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-10">
         <div className="space-y-10 flex-1">
           <div>
-            <h1 className="text-7xl font-bold leading-tight">
+            <h1 className="text-5xl font-bold leading-tight">
               Taib Islam
               <span className="text-[#00E5A4]">_</span>
             </h1>
-            <h2 className="text-4xl leading-tight">Software Engineer</h2>
+            <h2 className="text-3xl">Software Engineer</h2>
           </div>
           <p className="text-2xl">
             I&apos;m a front-end developer passionate about building accessible
