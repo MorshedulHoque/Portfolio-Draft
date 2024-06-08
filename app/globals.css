@@ -34,7 +34,7 @@ body {
   @apply space-y-5;
 }
 .space-lg {
-  @apply space-y-10;
+  @apply space-y-8;
 }
 
 /* button css start*/

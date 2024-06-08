@@ -9,6 +9,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        border: "#16161a",
         color1: "#16161a",
         color2: "#000e38",
       },
