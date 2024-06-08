@@ -1,9 +1,9 @@
 export default function Navbar() {
   return (
-    <div className="">
+    <div>
       <header className="flex fixed top-0 flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full backdrop-blur-md bg-white/30 text-sm py-6 dark:bg-gray-800">
         <nav
-          className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
+          className="max-w-7xl w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
           aria-label="Global"
         >
           <div className="flex items-center justify-between">
