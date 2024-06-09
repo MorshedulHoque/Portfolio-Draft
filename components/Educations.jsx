@@ -1,7 +1,5 @@
-"use client";
 import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
-import "react-vertical-timeline-component/style.min.css";
 
 export default function Educations() {
   return (
