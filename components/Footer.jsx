@@ -8,7 +8,7 @@ import { SiLeetcode } from "react-icons/si";
 export default function Footer() {
   return (
     <div className="bg-[#000E38] text-white">
-      <div className="flex justify-between wrapper p-20 gap-40">
+      <div className="flex lg:flex-row flex-col justify-between wrapper py-10 lg:p-20 gap-10 lg:gap-40">
         <div className="grow">
           <div className="mb-2">
             <h2 className="font-semibold">Taib Islam</h2>

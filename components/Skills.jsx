@@ -3,12 +3,12 @@ import Image from "next/image";
 
 export default function Skills() {
   return (
-    <div className="wrapper space-y-20" id="skills ">
+    <div className="wrapper space-v" id="skills ">
       <h2 className="text-2xl font-bold border-b border-[#3C4B55] pb-2">
         Skills
       </h2>
 
-      <h2 className="font-semibold text-3xl max-w-lg text-center mx-auto">
+      <h2 className="font-semibold text-xl lg:text-3xl max-w-lg text-center mx-auto">
         Most technologies that i have work in production and development
       </h2>
 
