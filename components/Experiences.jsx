@@ -63,7 +63,7 @@ export default function Experiences() {
                 </button>
               </div>
 
-              <div className="">
+              <div>
                 <h2 className="w-96 font-semibold text-lg">
                   How I designed an app that transforms web text stories into
                   real-time visual novels
