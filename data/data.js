@@ -104,7 +104,7 @@ const socialLinks = [
     id: 1,
     name: "LinkedIn",
     icon: <FaLinkedin size={30} />,
-    href: "https://www.linkedin.com/in/taib-islam-9b0b1b1b7/",
+    href: "https://www.linkedin.com/in/taibislamdipu",
   },
   {
     id: 2,
@@ -116,7 +116,7 @@ const socialLinks = [
     id: 3,
     name: "Beecrowd",
     icon: <SiLeetcode size={30} />,
-    href: "https://leetcode.com/taibislamdipu/",
+    href: "https://judge.beecrowd.com/en/profile/834556",
   },
   {
     id: 4,
@@ -128,7 +128,7 @@ const socialLinks = [
     id: 5,
     name: "Facebook",
     icon: <FaFacebook size={30} />,
-    href: "https://www.facebook.com/taibislamdipu/",
+    href: "https://www.facebook.com/taibislamdipu",
   },
 ];
 

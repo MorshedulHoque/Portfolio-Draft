@@ -1,5 +1,6 @@
 import { socialLinks } from "@/data/data";
 import Image from "next/image";
+import Link from "next/link";
 import HeroImage from "../public/taib-islam-color-blue.png";
 
 export default function Hero() {
@@ -21,14 +22,14 @@ export default function Hero() {
 
           <div className="flex gap-5">
             {socialLinks.map((data) => (
-              <a
+              <Link
                 key={data.id}
                 href={data.href}
                 target="_blank"
                 rel="noreferrer"
               >
                 {data.icon}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

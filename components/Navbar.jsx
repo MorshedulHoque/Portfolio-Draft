@@ -4,22 +4,19 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <div>
-      <header className="flex fixed top-0 flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full backdrop-blur-md bg-white/30 text-sm py-6 dark:bg-gray-800">
+      <header className="flex fixed top-0 flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full backdrop-blur-md bg-white/30 text-sm py-6 ">
         <nav
           className="wrapper w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
           aria-label="Global"
         >
           <div className="flex items-center justify-between">
-            <Link
-              className="flex-none text-xl font-semibold dark:text-white"
-              href="/"
-            >
+            <Link className="flex-none text-xl font-semibold " href="/">
               Taib Islam_
             </Link>
             <div className="sm:hidden">
               <button
                 type="button"
-                className="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-gray-700 dark:text-white dark:hover:bg-white/10 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                className="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
                 data-hs-collapse="#navbar-with-collapse"
                 aria-controls="navbar-with-collapse"
                 aria-label="Toggle navigation"

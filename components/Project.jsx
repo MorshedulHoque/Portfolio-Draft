@@ -3,7 +3,7 @@ export default function Project() {
     <div className="space-y-8">
       <div className="lg:flex justify-between">
         <div className="space-y-4">
-          <p className="lg:max-w-xl text-center lg:text-start dark:text-white">
+          <p className="lg:max-w-xl text-center lg:text-start">
             We bZm Graphics Limited is a full service photo editing and
             retouching studio offering services to e-commerce, product
             photographers, model photographers photography agencies, brands,
@@ -39,12 +39,12 @@ export default function Project() {
           </video>
         </div>
         <div className="col-span-3 md:col-span-2 bg-[url('/shape/shape-1.png')] bg-no-repeat bg-right-bottom lg:pt-16 lg:pl-10 p-4 space-y-4">
-          <h3 className="text-base lg:text-4xl font-bold max-w-[270px] dark:text-white">
+          <h3 className="text-base lg:text-4xl font-bold max-w-[270px]">
             Creative Studio
           </h3>
           <div>
             <a
-              className="hover:underline flex gap-x-2 items-center transition dark:text-white hover:text-secondary"
+              className="hover:underline flex gap-x-2 items-center transition hover:text-secondary"
               href={"#"}
               title="Visit Website"
               target="_blank"
