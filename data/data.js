@@ -2,25 +2,29 @@ import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaMedium } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
 
-const experiencesData = [
+const workExperienceData = [
   {
     id: 1,
     logo: "/codecony.jpg",
     name: "Codecony",
-    position: "Frontend Developer",
-    timeRange: "Aug 2023 - Present",
+    designation: "Frontend Developer",
+    timeRange: "Aug 2023 - Now",
     listItems: [
       "Developed and maintained existing web projects using Next.js, enhancing user experiences.",
       "Improved website performance by 20% through best practices in Next.js.",
       "Using Sanity for blog content management.",
     ],
     skills: ["HTML", "CSS", "JavaScript", "React", "Responsive Design"],
+    href: "https://codecony.com",
+    address: "Mohammadpur, Dhaka",
+    jobDescription:
+      " Making mobile apps, games & services for Windows Phone (rip)",
   },
   {
     id: 2,
     logo: "/letsdunch.jpg",
     name: "Lets Dunch",
-    position: "Frontend Developer",
+    designation: "Frontend Developer",
     timeRange: "Jan 2022 - Nov 2022",
     listItems: [
       "Lorem ipsum dolor sit amet.",
@@ -28,6 +32,10 @@ const experiencesData = [
       "Lorem ipsum dolor sit amet.",
     ],
     skills: ["Java", "Spring Boot", "SQL", "RESTful APIs", "Git"],
+    href: "https://www.letsdunch.com",
+    address: "Dubai, UAE",
+    jobDescription:
+      " Making mobile apps, games & services for Windows Phone (rip)",
   },
 ];
 
@@ -124,4 +132,4 @@ const socialLinks = [
   },
 ];
 
-export { educationData, experiencesData, socialLinks, techLogo };
+export { educationData, socialLinks, techLogo, workExperienceData };
