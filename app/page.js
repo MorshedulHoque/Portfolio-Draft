@@ -6,7 +6,7 @@ import Work from "@/components/Work";
 
 export default function Home() {
   return (
-    <div className="lg:space-y-20 space-y-10">
+    <div className="lg:space-y-20 space-y-20">
       <Hero />
       {/* <Experiences /> */}
       <Work />

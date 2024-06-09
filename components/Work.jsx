@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { FiArrowUpRight } from "react-icons/fi";
 import { IoBriefcaseOutline } from "react-icons/io5";
 import { LuPencilLine } from "react-icons/lu";
 import NextImage from "./ui/NextImage";
@@ -9,32 +10,48 @@ export default function Work() {
     <div className="wrapper ">
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
         {/* work experience */}
-        <div className="col-span-3 ">
+        <div className="col-span-3 space-v">
           <div className="flex items-center gap-2 ">
             <IoBriefcaseOutline size={24} />
-            <span>Work Experience</span>
+            <span className="font-semibold">Work Experience</span>
           </div>
 
           {/* experience */}
-          <div className="flex justify-between gap-2.5 mt-10">
-            <p className="text-sm">2023 - Now - 11 Months</p>
+          <div className="flex flex-col lg:flex-row justify-between gap-2.5 ">
+            <p className="text-sm text-mute">2023 - Now - 11 Months</p>
 
             <div className="w-96">
-              <p className="font-semibold">Codecony</p>
-              <p>Frontend Developer</p>
-              <p className="mt-2">
+              <Link className="hover:underline" href="#" target="_blank">
+                <p className="font-semibold">
+                  Frontend Developer at Codecony
+                  <FiArrowUpRight
+                    className="ml-1 inline-block mb-1"
+                    size={18}
+                  />
+                </p>
+              </Link>
+              <p className="text-mute">Mohammodpur, Dhaka</p>
+              <p className="mt-2 text-mute">
                 Making mobile apps, games & services for Windows Phone (rip)
               </p>
             </div>
           </div>
           {/* experience */}
-          <div className="flex justify-between gap-2.5 mt-10">
-            <p className="text-sm">2023 - Now - 11 Months</p>
+          <div className="flex flex-col lg:flex-row justify-between gap-2.5 mt-8 lg:mt-10">
+            <p className="text-sm text-mute">2023 - Now - 11 Months</p>
 
             <div className="w-96">
-              <p className="font-semibold">Codecony</p>
-              <p>Frontend Developer</p>
-              <p className="mt-2">
+              <Link className="hover:underline" href="#" target="_blank">
+                <p className="font-semibold">
+                  Frontend Developer at Codecony
+                  <FiArrowUpRight
+                    className="ml-1 inline-block mb-1"
+                    size={18}
+                  />
+                </p>
+              </Link>
+              <p className="text-mute">Mohammodpur, Dhaka</p>
+              <p className="mt-2 text-mute">
                 Making mobile apps, games & services for Windows Phone (rip)
               </p>
             </div>

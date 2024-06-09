@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  @apply text-[#000E38];
+  @apply text-primary;
 }
 
 .wrapper {
@@ -38,7 +38,7 @@ body {
 }
 
 .space-v {
-  @apply space-y-5 lg:space-y-10;
+  @apply space-y-8 lg:space-y-14;
 }
 
 /* button css start*/

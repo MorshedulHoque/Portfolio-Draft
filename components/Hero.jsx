@@ -6,7 +6,7 @@ import HeroImage from "../public/taib-islam-color-blue.png";
 
 export default function Hero() {
   return (
-    <div className="wrapper lg:py-24 mt-24">
+    <div className="wrapper lg:py-24 mt-28 ">
       <div className="flex flex-col lg:flex-row items-center justify-center gap-10">
         <div className="space-v flex-1">
           <div>
