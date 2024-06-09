@@ -7,8 +7,60 @@ import NextImage from "./ui/NextImage";
 export default function Work() {
   return (
     <div className="wrapper ">
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-5">
-        <div className="col-span-3 order-last lg:order-first">
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
+        {/* work experience */}
+        <div className="col-span-3 ">
+          <div className="flex items-center gap-2 ">
+            <IoBriefcaseOutline size={24} />
+            <span>Work Experience</span>
+          </div>
+
+          {/* experience */}
+          <div className="flex justify-between gap-2.5 mt-10">
+            <p className="text-sm">2023 - Now - 11 Months</p>
+
+            <div className="w-96">
+              <p className="font-semibold">Codecony</p>
+              <p>Frontend Developer</p>
+              <p className="mt-2">
+                Making mobile apps, games & services for Windows Phone (rip)
+              </p>
+            </div>
+          </div>
+          {/* experience */}
+          <div className="flex justify-between gap-2.5 mt-10">
+            <p className="text-sm">2023 - Now - 11 Months</p>
+
+            <div className="w-96">
+              <p className="font-semibold">Codecony</p>
+              <p>Frontend Developer</p>
+              <p className="mt-2">
+                Making mobile apps, games & services for Windows Phone (rip)
+              </p>
+            </div>
+          </div>
+
+          {/* experience */}
+          {/* <div className="flex gap-2.5 items-center mt-5">
+            <div className="">
+              <NextImage
+                className="rounded-full"
+                src="/letsdunch.jpg"
+                width={60}
+                height={60}
+              />
+            </div>
+            <div className="grow ">
+              <p className="font-semibold">Codecony</p>
+              <p>Frontend Developer</p>
+            </div>
+            <div>
+              <p className="text-sm">2023 - Present - 11 Months</p>
+            </div>
+          </div> */}
+        </div>
+
+        <div className="col-span-2 hidden">
           <div className="flex items-center gap-2 ">
             <LuPencilLine size={24} />
             <span>Recent Blog</span>
@@ -103,51 +155,6 @@ export default function Work() {
               </div>
             </div>
           </Link>
-        </div>
-
-        {/* work experience */}
-        <div className="col-span-2 ">
-          <div className="flex items-center gap-2 ">
-            <IoBriefcaseOutline size={24} />
-            <span>Work Experience</span>
-          </div>
-          {/* experience */}
-          <div className="flex gap-2.5 items-center mt-5">
-            <div className="">
-              <NextImage
-                className="rounded-full"
-                src="/codecony.jpg"
-                width={60}
-                height={60}
-              />
-            </div>
-            <div className="grow ">
-              <p className="font-semibold">Codecony</p>
-              <p>Frontend Developer</p>
-            </div>
-            <div>
-              <p className="text-sm">2023 - Present - 11 Months</p>
-            </div>
-          </div>
-
-          {/* experience */}
-          <div className="flex gap-2.5 items-center mt-5">
-            <div className="">
-              <NextImage
-                className="rounded-full"
-                src="/letsdunch.jpg"
-                width={60}
-                height={60}
-              />
-            </div>
-            <div className="grow ">
-              <p className="font-semibold">Codecony</p>
-              <p>Frontend Developer</p>
-            </div>
-            <div>
-              <p className="text-sm">2023 - Present - 11 Months</p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
