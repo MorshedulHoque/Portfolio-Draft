@@ -1,7 +1,5 @@
+import { socialLinks } from "@/data/data";
 import Image from "next/image";
-import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
-import { FaMedium } from "react-icons/fa6";
-import { SiLeetcode } from "react-icons/si";
 import HeroImage from "../public/taib-islam-color-blue.png";
 
 export default function Hero() {
@@ -22,11 +20,16 @@ export default function Hero() {
           </p>
 
           <div className="flex gap-5">
-            <FaLinkedin size={30} />
-            <FaGithub size={30} />
-            <FaFacebook size={30} />
-            <SiLeetcode size={30} />
-            <FaMedium size={30} />
+            {socialLinks.map((data) => (
+              <a
+                key={data.id}
+                href={data.href}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {data.icon}
+              </a>
+            ))}
           </div>
         </div>
 

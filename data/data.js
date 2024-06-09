@@ -1,6 +1,8 @@
-// data.json
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaMedium } from "react-icons/fa6";
+import { SiLeetcode } from "react-icons/si";
 
-export const experiencesData = [
+const experiencesData = [
   {
     id: 1,
     logo: "/codecony.jpg",
@@ -29,7 +31,7 @@ export const experiencesData = [
   },
 ];
 
-export const educationData = [
+const educationData = [
   {
     id: "1",
     date: "2014 - 2020",
@@ -74,7 +76,7 @@ export const educationData = [
   },
 ];
 
-export const techLogo = [
+const techLogo = [
   { id: 1, name: "JavaScript", srcUrl: "/logo/javascript.png" },
   { id: 2, name: "React", srcUrl: "/logo/react.png" },
   { id: 3, name: "Next.js", srcUrl: "/logo/next-js.png" },
@@ -88,3 +90,38 @@ export const techLogo = [
   { id: 11, name: "CSS", srcUrl: "/logo/css.png" },
   { id: 12, name: "Bootstrap", srcUrl: "/logo/bootstrap.png" },
 ];
+
+const socialLinks = [
+  {
+    id: 1,
+    name: "LinkedIn",
+    icon: <FaLinkedin size={30} />,
+    href: "https://www.linkedin.com/in/taib-islam-9b0b1b1b7/",
+  },
+  {
+    id: 2,
+    name: "Github",
+    icon: <FaGithub size={30} />,
+    href: "https://github.com/taibislamdipu",
+  },
+  {
+    id: 3,
+    name: "Beecrowd",
+    icon: <SiLeetcode size={30} />,
+    href: "https://leetcode.com/taibislamdipu/",
+  },
+  {
+    id: 4,
+    name: "Medium",
+    icon: <FaMedium size={30} />,
+    href: "https://medium.com/@taibislamdipu",
+  },
+  {
+    id: 5,
+    name: "Facebook",
+    icon: <FaFacebook size={30} />,
+    href: "https://www.facebook.com/taibislamdipu/",
+  },
+];
+
+export { educationData, experiencesData, socialLinks, techLogo };
