@@ -1,24 +1,30 @@
-// data.json
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaMedium } from "react-icons/fa6";
+import { SiLeetcode } from "react-icons/si";
 
-export const experiencesData = [
+const workExperienceData = [
   {
     id: 1,
     logo: "/codecony.jpg",
     name: "Codecony",
-    position: "Frontend Developer",
-    timeRange: "Aug 2023 - Present",
+    designation: "Frontend Developer",
+    timeRange: "Aug 2023 - Now",
     listItems: [
       "Developed and maintained existing web projects using Next.js, enhancing user experiences.",
       "Improved website performance by 20% through best practices in Next.js.",
       "Using Sanity for blog content management.",
     ],
     skills: ["HTML", "CSS", "JavaScript", "React", "Responsive Design"],
+    href: "https://codecony.com",
+    address: "Mohammadpur, Dhaka",
+    jobDescription:
+      " Making mobile apps, games & services for Windows Phone (rip)",
   },
   {
     id: 2,
     logo: "/letsdunch.jpg",
     name: "Lets Dunch",
-    position: "Frontend Developer",
+    designation: "Frontend Developer",
     timeRange: "Jan 2022 - Nov 2022",
     listItems: [
       "Lorem ipsum dolor sit amet.",
@@ -26,10 +32,14 @@ export const experiencesData = [
       "Lorem ipsum dolor sit amet.",
     ],
     skills: ["Java", "Spring Boot", "SQL", "RESTful APIs", "Git"],
+    href: "https://www.letsdunch.com",
+    address: "Dubai, UAE",
+    jobDescription:
+      " Making mobile apps, games & services for Windows Phone (rip)",
   },
 ];
 
-export const educationData = [
+const educationData = [
   {
     id: "1",
     date: "2014 - 2020",
@@ -74,7 +84,7 @@ export const educationData = [
   },
 ];
 
-export const techLogo = [
+const techLogo = [
   { id: 1, name: "JavaScript", srcUrl: "/logo/javascript.png" },
   { id: 2, name: "React", srcUrl: "/logo/react.png" },
   { id: 3, name: "Next.js", srcUrl: "/logo/next-js.png" },
@@ -88,3 +98,38 @@ export const techLogo = [
   { id: 11, name: "CSS", srcUrl: "/logo/css.png" },
   { id: 12, name: "Bootstrap", srcUrl: "/logo/bootstrap.png" },
 ];
+
+const socialLinks = [
+  {
+    id: 1,
+    name: "LinkedIn",
+    icon: <FaLinkedin size={30} />,
+    href: "https://www.linkedin.com/in/taibislamdipu",
+  },
+  {
+    id: 2,
+    name: "Github",
+    icon: <FaGithub size={30} />,
+    href: "https://github.com/taibislamdipu",
+  },
+  {
+    id: 3,
+    name: "Beecrowd",
+    icon: <SiLeetcode size={30} />,
+    href: "https://judge.beecrowd.com/en/profile/834556",
+  },
+  {
+    id: 4,
+    name: "Medium",
+    icon: <FaMedium size={30} />,
+    href: "https://medium.com/@taibislamdipu",
+  },
+  {
+    id: 5,
+    name: "Facebook",
+    icon: <FaFacebook size={30} />,
+    href: "https://www.facebook.com/taibislamdipu",
+  },
+];
+
+export { educationData, socialLinks, techLogo, workExperienceData };

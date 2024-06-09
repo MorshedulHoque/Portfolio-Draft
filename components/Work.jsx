@@ -1,14 +1,73 @@
 import Link from "next/link";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { FiArrowUpRight } from "react-icons/fi";
 import { IoBriefcaseOutline } from "react-icons/io5";
 import { LuPencilLine } from "react-icons/lu";
 import NextImage from "./ui/NextImage";
 
 export default function Work() {
+  const workExperienceData = [
+    {
+      id: 1,
+      logo: "/codecony.jpg",
+      name: "Codecony",
+      position: "Frontend Developer",
+      timeRange: "Aug 2023 - Present",
+      listItems: [
+        "Developed and maintained existing web projects using Next.js, enhancing user experiences.",
+        "Improved website performance by 20% through best practices in Next.js.",
+        "Using Sanity for blog content management.",
+      ],
+      skills: ["HTML", "CSS", "JavaScript", "React", "Responsive Design"],
+    },
+    {
+      id: 2,
+      logo: "/letsdunch.jpg",
+      name: "Lets Dunch",
+      position: "Frontend Developer",
+      timeRange: "Jan 2022 - Nov 2022",
+      listItems: [
+        "Lorem ipsum dolor sit amet.",
+        "Lorem ipsum dolor sit amet.",
+        "Lorem ipsum dolor sit amet.",
+      ],
+      skills: ["Java", "Spring Boot", "SQL", "RESTful APIs", "Git"],
+    },
+  ];
+
   return (
     <div className="wrapper ">
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-5">
-        <div className="col-span-3 order-last lg:order-first">
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
+        {/* work experience */}
+        <div className="col-span-3 space-v">
+          <div className="flex items-center gap-2 ">
+            <IoBriefcaseOutline size={24} />
+            <span className="font-semibold">Work Experience</span>
+          </div>
+
+          {/* experience */}
+          <div className="flex flex-col lg:flex-row justify-between gap-2.5 ">
+            <p className="text-sm text-mute">2023 - Now - 11 Months</p>
+
+            <div className="w-96">
+              <Link className="hover:underline" href="#" target="_blank">
+                <p className="font-medium">
+                  Frontend Developer at Codecony
+                  <FiArrowUpRight
+                    className="ml-1 inline-block mb-1"
+                    size={18}
+                  />
+                </p>
+              </Link>
+              <p className="text-mute">Mohammodpur, Dhaka</p>
+              <p className="mt-2 text-mute">
+                Making mobile apps, games & services for Windows Phone (rip)
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="col-span-2 hidden">
           <div className="flex items-center gap-2 ">
             <LuPencilLine size={24} />
             <span>Recent Blog</span>
@@ -103,51 +162,6 @@ export default function Work() {
               </div>
             </div>
           </Link>
-        </div>
-
-        {/* work experience */}
-        <div className="col-span-2 ">
-          <div className="flex items-center gap-2 ">
-            <IoBriefcaseOutline size={24} />
-            <span>Work Experience</span>
-          </div>
-          {/* experience */}
-          <div className="flex gap-2.5 items-center mt-5">
-            <div className="">
-              <NextImage
-                className="rounded-full"
-                src="/codecony.jpg"
-                width={60}
-                height={60}
-              />
-            </div>
-            <div className="grow ">
-              <p className="font-semibold">Codecony</p>
-              <p>Frontend Developer</p>
-            </div>
-            <div>
-              <p className="text-sm">2023 - Present - 11 Months</p>
-            </div>
-          </div>
-
-          {/* experience */}
-          <div className="flex gap-2.5 items-center mt-5">
-            <div className="">
-              <NextImage
-                className="rounded-full"
-                src="/letsdunch.jpg"
-                width={60}
-                height={60}
-              />
-            </div>
-            <div className="grow ">
-              <p className="font-semibold">Codecony</p>
-              <p>Frontend Developer</p>
-            </div>
-            <div>
-              <p className="text-sm">2023 - Present - 11 Months</p>
-            </div>
-          </div>
         </div>
       </div>
     </div>

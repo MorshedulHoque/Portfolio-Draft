@@ -3,25 +3,30 @@ import Image from "next/image";
 
 export default function Skills() {
   return (
-    <div className="wrapper space-y-20" id="skills">
-      <h2 className="text-2xl font-bold border-b border-[#3C4B55] pb-2">
+    <div className="wrapper space-v" id="skills ">
+      <h2 className="text-2xl font-medium border-b border-[#3C4B55] pb-2">
         Skills
       </h2>
 
-      <div className="grid grid-cols-4 gap-20 ">
+      <h2 className="text-xl lg:text-3xl max-w-lg text-center mx-auto">
+        Most technologies that i have work in production and development
+      </h2>
+
+      <div className="flex flex-wrap justify-center gap-10">
         {techLogo.map((data) => (
           <div
             key={data.id}
-            className="w-full h-40 shadow-md border rounded-md bg-gray-500/[.06] flex gap-4 flex-col items-center justify-center"
+            className="border border-gray-400 p-4 h-[110px] w-[150px] flex flex-col justify-center items-center rounded-2xl"
           >
-            <Image
-              className="object-contain"
-              src={`${data.srcUrl}`}
-              alt={`${data.name}`}
-              width={70}
-              height={70}
-            />
-            <p>{data.name}</p>
+            <div className="size-16 relative">
+              <Image
+                className="object-contain"
+                src={`${data.srcUrl}`}
+                alt={`${data.name}`}
+                fill
+              />
+            </div>
+            <p className="mt-2 text-sm font-semibold">{data.name}</p>
           </div>
         ))}
       </div>

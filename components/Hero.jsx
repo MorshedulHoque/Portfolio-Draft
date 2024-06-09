@@ -1,35 +1,38 @@
+import { socialLinks } from "@/data/data";
 import Image from "next/image";
-import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
-import { FaMedium } from "react-icons/fa6";
-import { SiLeetcode } from "react-icons/si";
+import Link from "next/link";
 import HeroImage from "../public/taib-islam-color-blue.png";
 
 export default function Hero() {
   return (
-    <div className="wrapper lg:py-24 py-12">
+    <div className="wrapper lg:py-24 mt-28 ">
       <div className="flex flex-col lg:flex-row items-center justify-center gap-10">
-        <div className="space-y-10 flex-1">
+        <div className="space-v flex-1">
           <div>
-            <h1 className="text-5xl font-bold leading-tight">
+            <h1 className="text-3xl lg:text-5xl font-bold leading-tight">
               Taib Islam
               <span className="text-[#00E5A4]">_</span>
             </h1>
-            <h2 className="text-3xl">Software Engineer</h2>
+            <h2 className="text-xl lg:text-3xl">Software Engineer</h2>
           </div>
-          <p className="text-2xl">
-            I&apos;m a front-end developer passionate about building accessible
-            web apps that users love.
+          <p className="lg:text-xl">
+            Hi hello, I was born and raised in Dhaka, Bangladesh. I&apos;m a web
+            developer. Outside of coding things, I&apos;m into books, and
+            gardening, Oh, and I have a super adorable cat, Kitty 🐈.
           </p>
 
           <div className="flex gap-5">
-            <FaLinkedin size={30} />
-            <FaGithub size={30} />
-            <FaFacebook size={30} />
-            <SiLeetcode size={30} />
-            <FaMedium size={30} />
+            {socialLinks.map((data) => (
+              <Link
+                key={data.id}
+                href={data.href}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {data.icon}
+              </Link>
+            ))}
           </div>
-
-          {/* <button>view project</button> */}
         </div>
 
         <div
@@ -41,8 +44,8 @@ export default function Hero() {
             className="rounded-full"
             src={HeroImage}
             alt="Taib Islam"
-            width={350}
-            height={350}
+            width={300}
+            height={300}
           />
         </div>
       </div>
