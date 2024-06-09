@@ -1,3 +1,6 @@
+import { MEDIUM_URL, RESUME_URL } from "@/data/links";
+import Link from "next/link";
+
 export default function Navbar() {
   return (
     <div>
@@ -7,12 +10,12 @@ export default function Navbar() {
           aria-label="Global"
         >
           <div className="flex items-center justify-between">
-            <a
+            <Link
               className="flex-none text-xl font-semibold dark:text-white"
-              href="#"
+              href="/"
             >
               Taib Islam_
-            </a>
+            </Link>
             <div className="sm:hidden">
               <button
                 type="button"
@@ -60,19 +63,28 @@ export default function Navbar() {
             className="hidden basis-full grow sm:block"
           >
             <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
-              <a
-                className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                href="#"
-              ></a>
-              <a className="font-medium custom-underline-effect" href="#">
-                Blog
-              </a>
-              <a className="font-medium custom-underline-effect" href="#">
-                Work
-              </a>
-              <a className="font-medium custom-underline-effect" href="#">
+              <Link
+                className="font-medium custom-underline-effect"
+                href={RESUME_URL}
+                target="_blank"
+              >
                 Resume
-              </a>
+              </Link>
+
+              <Link
+                className="font-medium custom-underline-effect"
+                href="#projects"
+              >
+                Projects
+              </Link>
+
+              <Link
+                className="font-medium custom-underline-effect"
+                href={MEDIUM_URL}
+                target="_blank"
+              >
+                Blog
+              </Link>
             </div>
           </div>
         </nav>

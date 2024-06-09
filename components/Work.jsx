@@ -22,7 +22,7 @@ export default function Work() {
 
             <div className="w-96">
               <Link className="hover:underline" href="#" target="_blank">
-                <p className="font-semibold">
+                <p className="font-medium">
                   Frontend Developer at Codecony
                   <FiArrowUpRight
                     className="ml-1 inline-block mb-1"
@@ -42,7 +42,7 @@ export default function Work() {
 
             <div className="w-96">
               <Link className="hover:underline" href="#" target="_blank">
-                <p className="font-semibold">
+                <p className="font-medium">
                   Frontend Developer at Codecony
                   <FiArrowUpRight
                     className="ml-1 inline-block mb-1"

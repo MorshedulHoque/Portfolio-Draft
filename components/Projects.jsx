@@ -1,12 +1,11 @@
 import Image from "next/image";
-import Project from "./Project";
-import BZMImage from "../public/images/bzm.png";
 import Link from "next/link";
+import BZMImage from "../public/images/bzm.png";
 
 export default function Projects() {
   return (
-    <div className="wrapper-lg space-y-10">
-      <h2 className="text-2xl font-bold border-b border-[#3C4B55] pb-2">
+    <div className="wrapper-lg space-y-10" id="projects">
+      <h2 className="text-2xl font-medium border-b border-[#3C4B55] pb-2">
         Projects
       </h2>
 
