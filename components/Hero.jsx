@@ -15,9 +15,10 @@ export default function Hero() {
             </h1>
             <h2 className="text-xl lg:text-3xl">Software Engineer</h2>
           </div>
-          <p className="lg:text-2xl">
-            I&apos;m a front-end developer passionate about building accessible
-            web apps that users love.
+          <p className="lg:text-xl">
+            Hi hello, I was born and raised in Dhaka, Bangladesh. I'm a web
+            developer. Outside of coding things, I'm into books, and gardening,
+            Oh, and I have a super adorable cat, Kitty 🐈.
           </p>
 
           <div className="flex gap-5">
