@@ -1,8 +1,8 @@
 import { BZM_GRAPHICS_URL, OJIEAME_URL } from "@/data/links";
 import Image from "next/image";
 import Link from "next/link";
-import OjieameImage from "../public/images/Ojieame.webp";
 import BZMImage from "../public/images/bzm.png";
+import OjieameImage from "../public/images/ojieame.webp";
 
 export default function Projects() {
   return (
