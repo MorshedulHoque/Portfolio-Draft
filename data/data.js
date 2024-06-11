@@ -34,7 +34,7 @@ const workExperienceData = [
     href: "https://www.letsdunch.com",
     address: "Dubai, UAE",
     jobDescription:
-      " Making mobile apps, games & services for Windows Phone (rip)",
+      "Developed front-end using React.js, Tailwind CSS and Redux; enhanced UI/UX.",
   },
 ];
 
@@ -89,7 +89,7 @@ const techLogo = [
   { id: 2, name: "React", srcUrl: "/logo/react.png" },
   { id: 5, name: "Redux", srcUrl: "/logo/redux.webp" },
   { id: 6, name: "Express.js", srcUrl: "/logo/express-js.webp" },
-  { id: 7, name: "Mongoose", srcUrl: "/logo/mongoose.jpg" },
+  { id: 7, name: "Mongoose", srcUrl: "/logo/mongoose.png" },
   { id: 8, name: "MongoDB", srcUrl: "/logo/mongo-db.png" },
   { id: 9, name: "Node.js", srcUrl: "/logo/nodejs.png" },
   { id: 10, name: "HTML", srcUrl: "/logo/html.png" },

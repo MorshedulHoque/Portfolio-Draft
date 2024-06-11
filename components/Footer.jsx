@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="grow space-y-1">
           <div className="mb-3">
             <h2 className="font-semibold">Taib Islam</h2>
-            <p className="font-light">Software Engineer</p>
+            <p className="font-light">Web Developer</p>
           </div>
 
           <div className="flex items-center gap-2">
@@ -30,7 +30,7 @@ export default function Footer() {
         </div>
 
         <div className="col-span-2">
-          <h2 className="font-semibold mb-3">Main</h2>
+          <h2 className="font-semibold mb-3 text-[#00E5A4]">Main</h2>
           <div className="flex flex-col gap-5">
             <Link
               className="flex items-center gap-2 hover:underline"
@@ -60,7 +60,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="col-span-2">
-          <h2 className="font-semibold mb-3">Contact</h2>
+          <h2 className="font-semibold mb-3 text-[#00E5A4]">Contact</h2>
           <div className="flex flex-col gap-5">
             {socialLinks.map((data) => (
               <Link

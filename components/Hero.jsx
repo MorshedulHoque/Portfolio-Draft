@@ -13,7 +13,7 @@ export default function Hero() {
               Taib Islam
               <span className="text-[#00E5A4]">_</span>
             </h1>
-            <h2 className="text-xl lg:text-3xl">Software Engineer</h2>
+            <h2 className="text-xl lg:text-3xl">Web Developer</h2>
           </div>
           <p className="lg:text-xl">
             Hi hello, I was born and raised in Dhaka, Bangladesh. I&apos;m a web

@@ -26,6 +26,11 @@ export default function Projects() {
                 bZm Graphics
               </h2>
 
+              <p className="my-8">
+                bZm Graphics Ltd. is a Visual Content Retouching Company for
+                E-commerce, Studios and Brands.
+              </p>
+
               <div className="flex gap-5 mt-4 whitespace-nowrap flex-wrap justify-center lg:justify-start">
                 <span className="border-color2 border px-3 py-1 rounded-full">
                   Next.js
@@ -80,6 +85,11 @@ export default function Projects() {
               <h2 className="text-2xl mt-8 lg:text-5xl font-normal decoration-2 !leading-tight max-w-sm transition group-hover:underline">
                 Ojieame
               </h2>
+
+              <p className="my-8">
+                A portfolio website for a product designer who wants to showcase
+                his works.
+              </p>
 
               <div className="flex gap-5 mt-4 whitespace-nowrap flex-wrap justify-center lg:justify-start">
                 <span className="border-color2 border px-3 py-1 rounded-full">
