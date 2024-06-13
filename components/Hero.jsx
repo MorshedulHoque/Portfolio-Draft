@@ -17,7 +17,7 @@ export default function Hero() {
           </div>
           <p className="lg:text-xl">
             Hi hello, I was born and raised in Dhaka, Bangladesh. I&apos;m a web
-            developer. Outside of coding things, I&apos;m into books, and
+            developer. Outside of coding things, I&apos;m into books and
             gardening, Oh, and I have a super adorable cat, Kitty 🐈.
           </p>
 
