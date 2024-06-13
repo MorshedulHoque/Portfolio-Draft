@@ -16,7 +16,7 @@ export default function Skills() {
         {techLogo.map((data) => (
           <div
             key={data.id}
-            className="border border-gray-400 p-4 h-[110px] w-[150px] flex flex-col justify-center items-center rounded-2xl"
+            className="bg-white shadow p-4 h-[110px] w-[150px] flex flex-col justify-center items-center rounded-2xl"
           >
             <div className="size-16 relative">
               <Image
@@ -24,6 +24,7 @@ export default function Skills() {
                 src={`${data.srcUrl}`}
                 alt={`${data.name}`}
                 fill
+                draggable={false}
               />
             </div>
             <p className="mt-2 text-sm font-semibold">{data.name}</p>

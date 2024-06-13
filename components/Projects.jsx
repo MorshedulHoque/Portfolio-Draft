@@ -18,7 +18,7 @@ export default function Projects() {
           target="_blank"
           className="h-[550px] lg:grid grid-cols-5 gap-10 group"
         >
-          <div className="flex space-v flex-col p-10 col-span-2 justify-between items-start bg-[#D6E6FF]">
+          <div className="flex space-v flex-col p-10 col-span-2 justify-between items-start bg-[#D6E6FF] rounded-3xl">
             <div className="">
               <span>WORK</span>
 
@@ -51,12 +51,13 @@ export default function Projects() {
             </div>
           </div>
 
-          <div className="relative w-full h-[350px] lg:h-full col-span-3 overflow-hidden">
+          <div className="relative w-full h-[350px] lg:h-full col-span-3 overflow-hidden rounded-3xl">
             <Image
               src={BZMImage}
               className="object-cover object-right transition delay-0 duration-300 ease-in-out group-hover:scale-105"
               alt="bzm graphics"
               fill
+              draggable={false}
             />
           </div>
         </Link>
@@ -69,16 +70,17 @@ export default function Projects() {
           target="_blank"
           className="h-[550px] lg:grid grid-cols-5 gap-10 group"
         >
-          <div className="relative w-full h-[350px] lg:h-full col-span-3 overflow-hidden">
+          <div className="relative w-full h-[350px] lg:h-full col-span-3 overflow-hidden rounded-3xl">
             <Image
               src={OjieameImage}
               className="object-cover transition delay-0 duration-300 ease-in-out group-hover:scale-105"
               alt="OjieameImage"
               fill
+              draggable={false}
             />
           </div>
 
-          <div className="flex flex-col p-10 space-v col-span-2 justify-between items-start bg-[#D6E6FF]">
+          <div className="flex flex-col p-10 space-v col-span-2 justify-between items-start bg-[#D6E6FF] rounded-3xl">
             <div className="">
               <span>WORK</span>
 

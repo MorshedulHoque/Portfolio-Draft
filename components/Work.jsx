@@ -36,7 +36,7 @@ export default function Work() {
   ];
 
   return (
-    <div className="wrapper ">
+    <div className="wrapper">
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
         {/* work experience */}
         <div className="col-span-3 space-v">
