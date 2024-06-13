@@ -46,6 +46,7 @@ export default function Hero() {
             alt="Taib Islam"
             width={300}
             height={300}
+            draggable={false}
           />
         </div>
       </div>
