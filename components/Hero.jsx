@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="flex flex-col lg:flex-row items-center justify-center gap-10">
         <div className="space-v flex-1">
           <div>
-            <h1 className="text-3xl lg:text-5xl font-bold leading-tight">
+            <h1 className="text-3xl lg:text-5xl font-bold leading-tight animate__animated animate__fadeInDown">
               Taib Islam
               <span className="text-[#00E5A4]">_</span>
             </h1>
