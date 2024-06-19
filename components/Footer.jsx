@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="flex lg:flex-row flex-col justify-between wrapper py-10 lg:p-20 gap-10 lg:gap-40">
         <div className="grow space-y-1">
           <div className="mb-3">
-            <h2 className="font-semibold">Taib Islam</h2>
+            <h2 className="text-xl">Taib Islam</h2>
             <p className="font-light">Web Developer</p>
           </div>
 
