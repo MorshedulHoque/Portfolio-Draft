@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import PrelineScript from "@/components/PrelineScript";
 import { GoogleTagManager } from "@next/third-parties/google";
+import { Analytics } from "@vercel/analytics/react";
 import "animate.css";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -26,7 +27,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Navbar />
         {children}
-
+        <Analytics />
         <PrelineScript />
       </body>
     </html>
