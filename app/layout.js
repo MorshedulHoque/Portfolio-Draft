@@ -16,6 +16,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <meta
+        name="google-site-verification"
+        content="2CHOUpWtc9e_FbvuUcu-tPSagkxL7E56vxt_hKsIsuo"
+      />
+
       {/* GoogleTagManager */}
       <GoogleTagManager gtmId="GTM-MFGJRR3M" />
       <body className={inter.className}>
