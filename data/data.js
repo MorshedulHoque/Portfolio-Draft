@@ -1,6 +1,7 @@
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaMedium } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
+import { BZM_GRAPHICS_URL, OJIEAME_URL } from "./links";
 
 const workExperienceData = [
   {
@@ -130,4 +131,33 @@ const socialLinks = [
   },
 ];
 
-export { educationData, socialLinks, techLogo, workExperienceData };
+const projectsData = [
+  {
+    id: 1,
+    title: "bZm Graphics",
+    description:
+      "bZm Graphics Ltd. is a Visual Content Retouching Company for E-commerce, Studios and Brands.",
+    imageSrc: "/images/bzm.png",
+    imageAlt: "bZm Graphics",
+    url: BZM_GRAPHICS_URL,
+    techStack: ["Next.js", "Tailwind CSS", "Localization"],
+  },
+  {
+    id: 2,
+    title: "Ojieame",
+    description:
+      "A portfolio website for a product designer who wants to showcase his works.",
+    imageSrc: "/images/ojieame.webp",
+    imageAlt: "Ojieame",
+    url: OJIEAME_URL,
+    techStack: ["React.js", "Tailwind CSS"],
+  },
+];
+
+export {
+  educationData,
+  projectsData,
+  socialLinks,
+  techLogo,
+  workExperienceData,
+};

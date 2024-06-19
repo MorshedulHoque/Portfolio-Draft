@@ -1,59 +1,53 @@
-export default function Project() {
+import Image from "next/image";
+import Link from "next/link";
+
+export default function Project({ data }) {
   return (
-    <div className="space-y-8">
-      <div className="lg:flex justify-between">
-        <div className="space-y-4">
-          <p className="lg:max-w-xl text-center lg:text-start">
-            We bZm Graphics Limited is a full service photo editing and
-            retouching studio offering services to e-commerce, product
-            photographers, model photographers photography agencies, brands,
-            FMCG product photography companies and more.
-          </p>
+    <>
+      <Link
+        href={data.url}
+        target="_blank"
+        className="md:grid grid-cols-5 gap-5 group"
+      >
+        <div className="flex space-v flex-col p-4 py-10 lg:p-10 col-span-2 justify-between items-start bg-[#D6E6FF] lg:rounded-3xl">
+          <div className="">
+            <span>WORK</span>
 
-          <div className="flex gap-5 whitespace-nowrap flex-wrap justify-center lg:justify-start">
-            <span>Next.js</span>
-            <span>Next.js</span>
-            <span>Next.js</span>
-            <span>Next.js</span>
+            <h2 className="text-2xl mt-8 lg:text-5xl font-normal decoration-2 !leading-tight max-w-sm transition group-hover:underline">
+              {data.title}
+            </h2>
+
+            <p className="my-8">{data.description}</p>
+
+            <div className="flex gap-5 mt-4 whitespace-nowrap flex-wrap">
+              {data.techStack.map((tech, techIndex) => (
+                <span
+                  key={techIndex}
+                  className="border-color2 border px-3 py-1 rounded-full"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
           </div>
-        </div>
 
-        <div className="flex justify-center lg:justify-start mt-14 lg:mt-0 ">
-          Jan 2024
-        </div>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-4 lg:gap-10 ">
-        <div className="col-span-3 w-full">
-          <video
-            width="100%"
-            height="100%"
-            autoPlay
-            muted
-            loop
-            playsInline
-            // poster={poster}
-          >
-            <source src="/videos/bzm.mp4" type="video/mp4" />
-            Your browser does not support the video.
-          </video>
-        </div>
-        <div className="col-span-3 md:col-span-2 bg-[url('/shape/shape-1.png')] bg-no-repeat bg-right-bottom lg:pt-16 lg:pl-10 p-4 space-y-4">
-          <h3 className="text-base lg:text-4xl font-bold max-w-[270px]">
-            Creative Studio
-          </h3>
           <div>
-            <a
-              className="hover:underline flex gap-x-2 items-center transition hover:text-secondary"
-              href={"#"}
-              title="Visit Website"
-              target="_blank"
-            >
-              VISIT WEBSITE
-            </a>
+            <button className="arrow-button">
+              Visit Website<span className="arrow"></span>
+            </button>
           </div>
         </div>
-      </div>
-    </div>
+
+        <div className="relative w-full h-[350px] lg:h-full col-span-3 overflow-hidden lg:rounded-3xl">
+          <Image
+            src={data.imageSrc}
+            className="object-cover object-right transition delay-0 duration-300 ease-in-out group-hover:scale-105"
+            alt={data.imageAlt}
+            fill
+            draggable={false}
+          />
+        </div>
+      </Link>
+    </>
   );
 }
