@@ -40,10 +40,10 @@ export default function Experience(props) {
   }, [timeRange]);
 
   return (
-    <div className="flex flex-col lg:flex-row justify-between gap-2.5 ">
-      <p className="text-sm text-mute">{formattedTimeRange}</p>
+    <div className="flex flex-col lg:flex-row justify-between gap-2.5">
+      <p className="text-sm text-mute min-w-60">{formattedTimeRange}</p>
 
-      <div className="w-96">
+      <div className="md:w-96">
         <Link className="hover:underline" href={href} target="_blank">
           <p className="font-medium">
             {designation} at {name}
