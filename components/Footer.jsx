@@ -1,5 +1,6 @@
 import { socialLinks } from "@/data/data";
 import { MEDIUM_URL, RESUME_URL } from "@/data/links";
+import getCurrentYear from "@/utils/getCurrentYear";
 import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
@@ -29,7 +30,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="col-span-2">
+        <div className="">
           <h2 className="font-semibold mb-3 text-[#00E5A4]">Main</h2>
           <div className="flex flex-col gap-5">
             <Link
@@ -59,7 +60,8 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-        <div className="col-span-2">
+
+        <div className="">
           <h2 className="font-semibold mb-3 text-[#00E5A4]">Contact</h2>
           <div className="flex flex-col gap-5">
             {socialLinks.map((data) => (
@@ -78,6 +80,18 @@ export default function Footer() {
             ))}
           </div>
         </div>
+      </div>
+
+      <div className="py-10 text-center border-t border-gray-700 wrapper">
+        <p>
+          Design & Develop with ❤️ by{" "}
+          <Link href="/" className="hover:underline">
+            Taib Islam Dipu.
+          </Link>
+        </p>
+        <p>
+          &copy; <span>{getCurrentYear()}</span> All rights reserved.
+        </p>
       </div>
     </div>
   );

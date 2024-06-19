@@ -24,6 +24,7 @@ export default function Hero() {
           <div className="flex gap-5">
             {socialLinks.map((data) => (
               <Link
+                className="hover:scale-125 transition"
                 key={data?.id}
                 href={data?.href}
                 target="_blank"

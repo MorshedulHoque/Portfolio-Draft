@@ -33,7 +33,7 @@ const workExperienceData = [
     ],
     skills: ["Java", "Spring Boot", "SQL", "RESTful APIs", "Git"],
     href: "https://www.letsdunch.com",
-    address: "Dubai, UAE",
+    address: "Dubai, UAE (Remote)",
     jobDescription:
       "Developed front-end using React.js, Tailwind CSS and Redux; enhanced UI/UX.",
   },
