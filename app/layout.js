@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <meta
         name="google-site-verification"
-        content="2CHOUpWtc9e_FbvuUcu-tPSagkxL7E56vxt_hKsIsuo"
+        content="kqb-ojgRUiCSqnNrXfI8J0493SPDHcsCYvBqnhIYQyk"
       />
 
       {/* GoogleTagManager */}
