@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import PrelineScript from "@/components/PrelineScript";
+import { GoogleTagManager } from "@next/third-parties/google";
 import "animate.css";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -15,9 +16,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      {/* GoogleTagManager */}
+      <GoogleTagManager gtmId="GTM-MFGJRR3M" />
       <body className={inter.className}>
         <Navbar />
         {children}
+
         <PrelineScript />
       </body>
     </html>
