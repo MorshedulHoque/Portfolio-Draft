@@ -7,9 +7,9 @@ export default function Project({ data }) {
       <Link
         href={data.url}
         target="_blank"
-        className="md:grid grid-cols-5 gap-5 group"
+        className="grid grid-cols-1 md:grid-cols-5 md:gap-8 group mt-10"
       >
-        <div className="flex space-v flex-col p-4 py-10 lg:p-10 col-span-2 justify-between items-start bg-[#D6E6FF] lg:rounded-3xl">
+        <div className="flex space-v flex-col w-full p-4 py-10 lg:p-10 col-span-2 justify-between items-start bg-[#D6E6FF] lg:rounded-3xl">
           <div className="">
             <span>WORK</span>
 
