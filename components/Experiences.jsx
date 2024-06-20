@@ -17,26 +17,6 @@ export default function Experiences() {
             <span className="font-semibold">Work Experience</span>
           </div>
 
-          {/* experience */}
-          {/* <div className="flex flex-col lg:flex-row justify-between gap-2.5 ">
-            <p className="text-sm text-mute">2023 - Now - 11 Months</p>
-
-            <div className="w-96">
-              <Link className="hover:underline" href="#" target="_blank">
-                <p className="font-medium">
-                  Frontend Developer at Codecony
-                  <FiArrowUpRight
-                    className="ml-1 inline-block mb-1"
-                    size={18}
-                  />
-                </p>
-              </Link>
-              <p className="text-mute">Mohammodpur, Dhaka</p>
-              <p className="mt-2 text-mute">
-                Making mobile apps, games & services for Windows Phone (rip)
-              </p>
-            </div>
-          </div> */}
           {workExperienceData.map((data) => (
             <Experience data={data} key={data.id} />
           ))}

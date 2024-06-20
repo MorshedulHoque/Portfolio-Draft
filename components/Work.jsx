@@ -47,7 +47,7 @@ export default function Work() {
 
           {/* experience */}
           <div className="flex flex-col lg:flex-row justify-between gap-2.5 ">
-            <p className="text-sm text-mute">2023 - Now - 11 Months</p>
+            <p className="text-sm text-secondary">2023 - Now - 11 Months</p>
 
             <div className="w-96">
               <Link className="hover:underline" href="#" target="_blank">
@@ -59,8 +59,8 @@ export default function Work() {
                   />
                 </p>
               </Link>
-              <p className="text-mute">Mohammodpur, Dhaka</p>
-              <p className="mt-2 text-mute">
+              <p className="text-secondary">Mohammodpur, Dhaka</p>
+              <p className="mt-2 text-secondary">
                 Making mobile apps, games & services for Windows Phone (rip)
               </p>
             </div>

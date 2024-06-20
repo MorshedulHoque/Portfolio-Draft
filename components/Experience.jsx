@@ -41,17 +41,17 @@ export default function Experience(props) {
 
   return (
     <div className="flex flex-col lg:flex-row justify-between gap-2.5">
-      <p className="text-sm text-mute min-w-60">{formattedTimeRange}</p>
+      <p className="text-sm text-secondary min-w-60">{formattedTimeRange}</p>
 
       <div className="md:w-96">
         <Link className="hover:underline" href={href} target="_blank">
-          <p className="font-medium">
+          <h2 className="font-semibold text-base">
             {designation} at {name}
             <FiArrowUpRight className="ml-1 inline-block mb-1" size={18} />
-          </p>
+          </h2>
         </Link>
-        <p className="text-mute">{address}</p>
-        <p className="mt-2 text-mute">{jobDescription}</p>
+        <p className="text-secondary">{address}</p>
+        <p className="mt-2 text-secondary">{jobDescription}</p>
       </div>
     </div>
   );
