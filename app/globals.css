@@ -17,16 +17,19 @@ html {
 }
 
 body {
-  @apply text-primary bg-[#f5f5f5];
+  @apply text-white bg-contain bg-no-repeat bg-[#0D1224] bg-[url("https://codewithmosh.com/_next/static/media/bg-grid.8abf9bc6.svg")];
+}
+
+/* selected text color */
+::selection {
+  @apply bg-[#D835A7];
 }
 
 .wrapper {
-  /* @apply mx-auto max-w-7xl py-10 lg:py-20 lg:px-20 px-4; */
   @apply mx-auto max-w-7xl lg:px-20 px-4;
 }
 
 .wrapper-lg {
-  /* @apply mx-auto max-w-7xl py-10 lg:py-20 lg:px-20 px-4; */
   @apply mx-auto max-w-[1600px] lg:px-20 px-4;
 }
 
@@ -44,8 +47,7 @@ body {
 /* button css start*/
 .arrow-button {
   display: flex;
-  color: #c2ffe9;
-  background-color: #000e38;
+  background: linear-gradient(to bottom left, #f926ae, #8028ee);
   padding: 14px 20px;
   border-radius: 26px;
   transition: all 0.3s ease;
@@ -91,10 +93,10 @@ body {
   width: 8px;
 }
 
-.arrow-button:hover {
+/* .arrow-button:hover {
   background-color: #012eb4;
   color: #fff;
-}
+} */
 /* button css emd*/
 
 /* vertical-timeline start  */

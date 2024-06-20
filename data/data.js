@@ -84,18 +84,24 @@ const educationData = [
 ];
 
 const techLogo = [
-  { id: 3, name: "Next.js", srcUrl: "/logo/next-js.png" },
-  { id: 1, name: "JavaScript", srcUrl: "/logo/javascript.png" },
-  { id: 4, name: "Tailwind CSS", srcUrl: "/logo/tailwindcss.png" },
-  { id: 2, name: "React", srcUrl: "/logo/react.png" },
-  { id: 5, name: "Redux", srcUrl: "/logo/redux.webp" },
-  { id: 6, name: "Express.js", srcUrl: "/logo/express-js.webp" },
-  { id: 7, name: "Mongoose", srcUrl: "/logo/mongoose.png" },
-  { id: 8, name: "MongoDB", srcUrl: "/logo/mongo-db.png" },
-  { id: 9, name: "Node.js", srcUrl: "/logo/nodejs.png" },
-  { id: 10, name: "HTML", srcUrl: "/logo/html.png" },
-  { id: 11, name: "CSS", srcUrl: "/logo/css.png" },
-  { id: 12, name: "Bootstrap", srcUrl: "/logo/bootstrap.png" },
+  {
+    name: "Next JS",
+    srcUrl: "https://i.ibb.co/85hCNp1/nextjs.png",
+  },
+  { name: "JavaScript", srcUrl: "/logo/javascript.png" },
+  { name: "Tailwind CSS", srcUrl: "/logo/tailwindcss.png" },
+  { name: "React", srcUrl: "/logo/react.png" },
+  { name: "Redux", srcUrl: "/logo/redux.webp" },
+  {
+    name: "Express JS",
+    srcUrl: "https://i.ibb.co/DMr2T4v/express-js.png",
+  },
+  { name: "Mongoose", srcUrl: "/logo/mongoose.png" },
+  { name: "MongoDB", srcUrl: "/logo/mongo-db.png" },
+  { name: "Node.js", srcUrl: "/logo/nodejs.png" },
+  { name: "HTML", srcUrl: "/logo/html.png" },
+  { name: "CSS", srcUrl: "/logo/css.png" },
+  { name: "Bootstrap", srcUrl: "/logo/bootstrap.png" },
 ];
 
 const socialLinks = [
