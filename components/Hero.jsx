@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <div className="wrapper lg:py-24 mt-28 ">
       <div className="flex flex-col lg:flex-row items-center justify-center gap-10">
-        <div className="space-v flex-1">
+        <div className="space-vertical flex-1">
           <div>
             <h1 className="text-3xl lg:text-5xl font-bold leading-tight animate__animated animate__fadeInDown">
               Taib Islam
@@ -18,7 +18,7 @@ export default function Hero() {
           <p className="lg:text-xl">
             Hi hello, I was born and raised in Dhaka, Bangladesh. I&apos;m a web
             developer. Outside of coding things, I&apos;m into books and
-            gardening, Oh, and I have a super adorable cat, Kitty 🐈.
+            gardening, Oh, and I have a super adorable cat, Kitty 🐈
           </p>
 
           <div className="flex gap-5">

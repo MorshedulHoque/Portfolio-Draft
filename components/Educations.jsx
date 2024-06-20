@@ -4,12 +4,12 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 export default function Educations() {
   return (
-    <div className="wrapper space-v" id="education">
+    <div className="wrapper space-vertical" id="education">
       <h2 className="text-2xl font-medium border-b border-gray-800 pb-2">
         Education
       </h2>
 
-      <section className="max-w-md mx-auto space-v">
+      <section className="max-w-md mx-auto space-vertical">
         {educationData.map((data) => (
           <div key={data?.id}>
             <h2 className="font-medium">

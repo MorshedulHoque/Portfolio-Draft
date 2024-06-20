@@ -39,7 +39,7 @@ export default function Work() {
     <div className="wrapper">
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
         {/* work experience */}
-        <div className="col-span-3 space-v">
+        <div className="col-span-3 space-vertical">
           <div className="flex items-center gap-2 ">
             <IoBriefcaseOutline size={24} />
             <span className="font-semibold">Work Experience</span>

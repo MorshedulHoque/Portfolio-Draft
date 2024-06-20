@@ -9,7 +9,7 @@ export default function Project({ data }) {
         target="_blank"
         className="grid grid-cols-1 md:grid-cols-5 md:gap-8 group mt-10"
       >
-        <div className="flex space-v flex-col w-full p-4 py-10 lg:p-10 col-span-2 justify-between items-start border border-gray-800 group-hover:border-gray-500 transition duration-200 ease-in-out lg:rounded-3xl bg-[#12172A]">
+        <div className="flex space-vertical flex-col w-full p-4 py-10 lg:p-10 col-span-2 justify-between items-start border border-gray-800 group-hover:border-gray-500 transition duration-200 ease-in-out lg:rounded-3xl bg-[#12172A]">
           <div className="">
             <span>WORK</span>
 
