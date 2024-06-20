@@ -1,3 +1,4 @@
+import content from "@/data/content.json";
 import { socialLinks } from "@/data/data";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,11 +16,7 @@ export default function Hero() {
             </h1>
             <h2 className="text-xl lg:text-3xl">Web Developer</h2>
           </div>
-          <p className="lg:text-xl">
-            Hi hello, I was born and raised in Dhaka, Bangladesh. I&apos;m a web
-            developer. Outside of coding things, I&apos;m into books and
-            gardening, Oh, and I have a super adorable cat, Kitty 🐈
-          </p>
+          <p className="lg:text-xl">{content.hero.description}</p>
 
           <div className="flex gap-5">
             {socialLinks.map((data) => (
@@ -48,6 +45,7 @@ export default function Hero() {
             width={300}
             height={300}
             draggable={false}
+            priority
           />
         </div>
       </div>
