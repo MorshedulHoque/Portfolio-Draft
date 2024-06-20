@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Skills() {
   return (
-    <div className="wrapper space-v pb-28" id="skills">
+    <div className="wrapper space-vertical pb-28" id="skills">
       <h2 className="text-2xl font-medium border-b border-gray-800 pb-2">
         Skills
       </h2>
