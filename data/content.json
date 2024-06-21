@@ -2,5 +2,9 @@
   "hero": {
     "title": "Taib Islam | Web Developer Portfolio of Taib Islam Dipu",
     "description": "Hi hello, I was born and raised in Dhaka, Bangladesh. I'm a web developer. Outside of coding things, I'm into books and gardening, Oh, and I have a super adorable cat, Kitty 🐈"
+  },
+
+  "footer": {
+    "description": "Designed & Developed with ❤️ by Taib Islam Dipu."
   }
 }
