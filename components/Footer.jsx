@@ -30,8 +30,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="">
-          <h2 className="font-semibold mb-3 text-[#00E5A4]">Main</h2>
+        <div>
+          <h2 className="font-semibold mb-6 text-[#00E5A4]">Main</h2>
           <div className="flex flex-col gap-5">
             <Link
               className="flex items-center gap-2 hover:underline"
@@ -61,8 +61,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="">
-          <h2 className="font-semibold mb-3 text-[#00E5A4]">Contact</h2>
+        <div>
+          <h2 className="font-semibold mb-6 text-[#00E5A4]">Contact</h2>
           <div className="flex flex-col gap-5">
             {socialLinks.map((data) => (
               <Link
