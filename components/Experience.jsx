@@ -2,9 +2,9 @@
 
 import { fadeInUp } from "@/utils/animation";
 import { calculateTimeDifference } from "@/utils/timeCalculate";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 
 export default function Experience(props) {
@@ -21,15 +21,8 @@ export default function Experience(props) {
   } = props.data;
 
   const [formattedTimeRange, setFormattedTimeRange] = useState(timeRange);
-  const ref = useRef(null);
-  const isInView = useInView(ref);
-  const [hasBeenInView, setHasBeenInView] = useState(false);
 
-  useEffect(() => {
-    if (isInView && !hasBeenInView) {
-      setHasBeenInView(true);
-    }
-  }, [isInView, hasBeenInView]);
+  const [hasBeenInView, setHasBeenInView] = useState(false);
 
   // calculate time difference
   useEffect(() => {
@@ -39,11 +32,12 @@ export default function Experience(props) {
   }, [timeRange]);
 
   return (
-    <div ref={ref}>
+    <>
       <motion.div
         className="flex flex-col lg:flex-row justify-between gap-2.5"
         initial="hidden"
-        animate={hasBeenInView ? "visible" : "hidden"}
+        whileInView="whileInView"
+        viewport={{ once: true }}
         variants={fadeInUp}
       >
         <p className="text-sm text-secondary min-w-60">{formattedTimeRange}</p>
@@ -59,6 +53,6 @@ export default function Experience(props) {
           <p className="mt-2 text-secondary">{jobDescription}</p>
         </div>
       </motion.div>
-    </div>
+    </>
   );
 }
