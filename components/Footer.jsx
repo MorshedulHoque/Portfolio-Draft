@@ -82,10 +82,10 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="py-10 text-center border-t border-gray-800 wrapper">
+      <div className="py-10 text-center border-t border-gray-800 wrapper ">
         <p>
           Designed & Developed with ❤️ by{" "}
-          <Link href="/" className="hover:underline">
+          <Link href="/" className="hover:underline ">
             Taib Islam Dipu.
           </Link>
         </p>

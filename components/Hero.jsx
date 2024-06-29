@@ -20,7 +20,7 @@ export default function Hero() {
           <div>
             <h1 className="text-3xl lg:text-5xl font-bold leading-tight">
               Taib Islam
-              <span className="text-[#00E5A4]">_</span>
+              <span className="text-highlight">_</span>
             </h1>
             <h2 className="text-xl lg:text-3xl">Web Developer</h2>
           </div>

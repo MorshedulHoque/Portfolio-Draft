@@ -1,4 +1,7 @@
+"use client";
 import { techLogo } from "@/data/data";
+import { fadeInUp } from "@/utils/animation";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function Skills() {
@@ -12,11 +15,17 @@ export default function Skills() {
         Most technologies that I have work in production and development
       </h2>
 
-      <div className="flex flex-wrap justify-center gap-10">
+      <motion.div
+        className="flex flex-wrap justify-center gap-10"
+        initial="hidden"
+        whileInView="whileInView"
+        viewport={{ once: true }}
+        variants={fadeInUp}
+      >
         {techLogo?.map((data, i) => (
           <div
             key={i}
-            className="bg-[#11152C] transition hover:scale-110 duration-200 ease-in-out border border-gray-800 hover:border-gray-500 p-4 h-[110px] w-[150px] flex flex-col justify-center items-center rounded-2xl"
+            className="bg-[#11152C] transition duration-200 ease-in-out border border-gray-800 hover:border-gray-500 p-4 h-[110px] w-[150px] flex flex-col justify-center items-center rounded-2xl cursor-pointer"
           >
             <div className="size-16 relative">
               <Image
@@ -33,7 +42,7 @@ export default function Skills() {
             </p>
           </div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 }

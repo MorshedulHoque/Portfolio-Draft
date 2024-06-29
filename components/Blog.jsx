@@ -22,7 +22,7 @@ export default function Blog() {
                 width={50}
                 height={50}
               />
-              <button className="font-medium border p-2 items-center hidden group-hover:flex gap-2 bg-color2 hover:font-semibold text-white rounded-lg">
+              <button className="font-medium border p-2 items-center hidden group-hover:flex gap-2 bg-[#000e38] hover:font-semibold text-white rounded-lg">
                 Read Post <FaExternalLinkAlt />
               </button>
             </div>
@@ -67,7 +67,7 @@ export default function Blog() {
                 width={50}
                 height={50}
               />
-              <button className="font-medium border p-2 items-center hidden group-hover:flex gap-2 bg-color2 hover:font-semibold text-white rounded-lg">
+              <button className="font-medium border p-2 items-center hidden group-hover:flex gap-2 bg-[#000e38] hover:font-semibold text-white rounded-lg">
                 Read Post <FaExternalLinkAlt />
               </button>
             </div>
