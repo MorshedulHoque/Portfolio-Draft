@@ -1,3 +1,6 @@
+"use client";
+import { fadeInRight } from "@/utils/animation"; // Adjust the import path as necessary
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -38,7 +41,14 @@ export default function Project({ data }) {
           </div>
         </div>
 
-        <div className="relative w-full h-[350px] lg:h-full col-span-3 overflow-hidden lg:rounded-3xl">
+        {/* fadeInRight */}
+        <motion.div
+          className="relative w-full h-[350px] lg:h-full col-span-3 overflow-hidden lg:rounded-3xl"
+          variants={fadeInRight}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
           <Image
             src={data?.imageSrc}
             className="object-cover object-right transition delay-0 duration-300 ease-in-out group-hover:scale-105"
@@ -46,7 +56,7 @@ export default function Project({ data }) {
             fill
             draggable={false}
           />
-        </div>
+        </motion.div>
       </Link>
     </>
   );
