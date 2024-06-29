@@ -1,4 +1,7 @@
+"use client";
 import { educationData } from "@/data/data";
+import { fadeInUp } from "@/utils/animation";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
 
@@ -11,7 +14,13 @@ export default function Educations() {
 
       <section className="max-w-md mx-auto space-vertical">
         {educationData.map((data) => (
-          <div key={data?.id}>
+          <motion.div
+            key={data?.id}
+            initial="hidden"
+            whileInView="whileInView"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
             <h2 className="font-medium">
               <Link
                 className="hover:underline"
@@ -27,7 +36,7 @@ export default function Educations() {
             <p className="mt-3 text-secondary">
               {data?.skills?.length > 0 && data.skills.join(" ")}
             </p>
-          </div>
+          </motion.div>
         ))}
       </section>
     </div>
