@@ -2,15 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
-
-.tb {
+/* .tb {
   border: 1px solid red;
 }
 
 .tc {
   background-color: rgb(254 202 202);
-}
+} */
 
 html {
   scroll-behavior: smooth;
@@ -31,13 +29,6 @@ body {
 
 .wrapper-lg {
   @apply mx-auto max-w-[1600px] lg:px-20 px-4;
-}
-
-.space-md {
-  @apply space-y-5;
-}
-.space-lg {
-  @apply space-y-8;
 }
 
 .space-vertical {
@@ -92,18 +83,6 @@ body {
   opacity: 1;
   width: 8px;
 }
-
-/* .arrow-button:hover {
-  background-color: #012eb4;
-  color: #fff;
-} */
-/* button css emd*/
-
-/* vertical-timeline start  */
-.vertical-timeline-element-icon {
-  background-color: #000e38 !important;
-}
-/* vertical-timeline end  */
 
 /* hover underline effect start */
 .custom-underline-effect {
