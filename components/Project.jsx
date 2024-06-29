@@ -1,9 +1,17 @@
+"use client";
+import { fadeInUp } from "@/utils/animation";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Project({ data }) {
   return (
-    <>
+    <motion.div
+      initial="hidden"
+      whileInView="whileInView"
+      viewport={{ once: true }}
+      variants={fadeInUp}
+    >
       <Link
         href={data?.url}
         target="_blank"
@@ -48,6 +56,6 @@ export default function Project({ data }) {
           />
         </div>
       </Link>
-    </>
+    </motion.div>
   );
 }
