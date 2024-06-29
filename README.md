@@ -25,5 +25,5 @@ I'm currently focused on front-end development and working on different projects
 ## For More Details Please Visit:
 
 - [GitHub](https://github.com/taibislamdipu)
-- [Portfolio](https://taibislamdipu.netlify.app)
+- [LinkedIn](https://www.linkedin.com/in/taibislamdipu/)
 - [Blog](https://medium.com/@taibislamdipu)
