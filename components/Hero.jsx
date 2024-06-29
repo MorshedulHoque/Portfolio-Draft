@@ -1,21 +1,11 @@
 "use client";
 import content from "@/data/content.json";
 import { socialLinks } from "@/data/data";
+import { fadeInLeft, fadeInRight } from "@/utils/animation";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import HeroImage from "../public/taib-islam-color-blue.png";
-
-// animation
-const fadeInRight = {
-  hidden: { opacity: 0, x: 50 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
-};
-// animation
-const fadeInLeft = {
-  hidden: { opacity: 0, x: -50 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
-};
 
 export default function Hero() {
   return (
