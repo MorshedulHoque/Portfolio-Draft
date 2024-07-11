@@ -8,7 +8,7 @@ import { LuMail, LuPhone } from "react-icons/lu";
 
 export default function Footer() {
   return (
-    <div className="border-t border-gray-800 ">
+    <div className="border-t border-gray-800 bg-[#11152C]">
       <div className="flex lg:flex-row flex-col justify-between wrapper py-10 lg:p-20 gap-10 lg:gap-40">
         <div className="grow space-y-1">
           <div className="mb-3">
