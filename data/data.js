@@ -1,7 +1,7 @@
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaMedium } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
-import { BZM_GRAPHICS_URL, OJIEAME_URL } from "./links";
+import { BZM_GRAPHICS_URL, MASKBG_URL, OJIEAME_URL } from "./links";
 
 const workExperienceData = [
   {
@@ -150,6 +150,16 @@ const projectsData = [
   },
   {
     id: 2,
+    title: "Mask BG",
+    description:
+      "Free AI Image Remove Background. Remove the background of your image.",
+    imageSrc: "/images/remove-bg.png",
+    imageAlt: "MASKBG",
+    url: MASKBG_URL,
+    techStack: ["HTML5 Canvas", "Next.js", "Tailwind.css"],
+  },
+  {
+    id: 3,
     title: "Ojieame",
     description:
       "A portfolio website for a product designer who wants to showcase his works.",

@@ -9,7 +9,7 @@ export default function Projects() {
         Projects
       </h2>
 
-      {projectsData?.map((data) => (
+      {projectsData?.slice(0, 2).map((data) => (
         <Project data={data} key={data?.id} />
       ))}
 
