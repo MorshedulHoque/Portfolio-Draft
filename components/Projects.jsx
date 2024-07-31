@@ -1,4 +1,5 @@
 import { projectsData } from "@/data/data";
+import Link from "next/link";
 import Project from "./Project";
 
 export default function Projects() {
@@ -11,6 +12,12 @@ export default function Projects() {
       {projectsData?.map((data) => (
         <Project data={data} key={data?.id} />
       ))}
+
+      <div className="mt-10 flex justify-center">
+        <Link href="/portfolio" target="_blank" className="underline">
+          View All
+        </Link>
+      </div>
     </div>
   );
 }
