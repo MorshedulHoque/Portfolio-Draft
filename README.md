@@ -55,7 +55,7 @@ Follow these steps to set up and run this project on your local machine:
    http://localhost:3000
    ```
 
-## For More Details Please Visit:
+## Contact Me:
 
 - [GitHub](https://github.com/taibislamdipu)
 - [LinkedIn](https://www.linkedin.com/in/taibislamdipu/)
