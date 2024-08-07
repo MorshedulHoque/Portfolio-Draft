@@ -1,12 +1,23 @@
 import Project from "@/components/Project";
 import { projectsData } from "@/data/data";
+import Link from "next/link";
+import { IoArrowBackCircleOutline } from "react-icons/io5";
 
 export default function Portfolio() {
   return (
     <div className="wrapper-lg lg:py-24 mt-8">
-      <h2 className="text-2xl mb-10 font-medium border-b border-gray-800 pb-2">
-        Projects
-      </h2>
+      <div className="w-full border-b border-gray-800 mb-10 ">
+        <Link href="/" className="w-min inline-block group">
+          <h2 className="text-2xl font-medium flex items-center gap-2.5 pb-2">
+            <IoArrowBackCircleOutline
+              size={34}
+              className="group-hover:scale-125 transition"
+            />
+            Projects
+          </h2>
+        </Link>
+      </div>
+
       <p className="font-semibold mb-3">
         Real-Life Project with Extensive User Engagement
       </p>

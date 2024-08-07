@@ -1,6 +1,11 @@
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaMedium } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
+import HTML_CANVAS_LOGO from "../public/logo/html-canvas.png";
+import LOCALIZATION_LOGO from "../public/logo/localization.png";
+import NEXT_JS_LOGO from "../public/logo/next-js-logo.png";
+import REACTJS_LOGO from "../public/logo/react-logo.png";
+import TAILWINDCSS_LOGO from "../public/logo/tailwindcss.png";
 import { BZM_GRAPHICS_URL, MASKBG_URL, OJIEAME_URL } from "./links";
 
 const workExperienceData = [
@@ -142,11 +147,18 @@ const projectsData = [
     id: 1,
     title: "bZm Graphics",
     description:
-      "bZm Graphics Ltd. is a Visual Content Retouching Company for E-commerce, Studios and Brands.",
+      "bZm Graphics Ltd. is a Visual Content Retouching Company for E-commerce, Studios, and Brands.",
     imageSrc: "/images/bzm.png",
     imageAlt: "bZm Graphics",
     url: BZM_GRAPHICS_URL,
-    techStack: ["Next.js", "Tailwind CSS", "Localization"],
+    techStack: [
+      {
+        name: "Next.js",
+        icon: NEXT_JS_LOGO,
+      },
+      { name: "Tailwind CSS", icon: TAILWINDCSS_LOGO },
+      { name: "Localization", icon: LOCALIZATION_LOGO },
+    ],
   },
   {
     id: 2,
@@ -156,7 +168,11 @@ const projectsData = [
     imageSrc: "/images/remove-bg.png",
     imageAlt: "MASKBG",
     url: MASKBG_URL,
-    techStack: ["HTML5 Canvas", "Next.js", "Tailwind.css"],
+    techStack: [
+      { name: "HTML5 Canvas", icon: HTML_CANVAS_LOGO },
+      { name: "Next.js", icon: NEXT_JS_LOGO },
+      { name: "Tailwind.css", icon: TAILWINDCSS_LOGO },
+    ],
   },
   {
     id: 3,
@@ -166,7 +182,10 @@ const projectsData = [
     imageSrc: "/images/ojieame.webp",
     imageAlt: "Ojieame",
     url: OJIEAME_URL,
-    techStack: ["React.js", "Tailwind CSS"],
+    techStack: [
+      { name: "React.js", icon: REACTJS_LOGO },
+      { name: "Tailwind CSS", icon: TAILWINDCSS_LOGO },
+    ],
   },
 ];
 

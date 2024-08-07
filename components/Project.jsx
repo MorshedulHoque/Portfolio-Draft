@@ -31,9 +31,21 @@ export default function Project({ data }) {
               {data?.techStack?.map((tech, techIndex) => (
                 <span
                   key={techIndex}
-                  className="bg-violet-500 px-5 py-2 rounded-full"
+                  className="bg-violet-500 px-5 py-2 rounded-full flex items-center gap-2.5"
                 >
-                  {tech}
+                  {tech?.icon && (
+                    <div className="bg-white p-1 rounded-full flex items-center justify-center relative size-10">
+                      <Image
+                        src={tech?.icon}
+                        className="object-contain"
+                        alt="NEXT_JS_LOGO"
+                        width={28}
+                        height={28}
+                        draggable={false}
+                      />
+                    </div>
+                  )}
+                  {tech?.name}
                 </span>
               ))}
             </div>
