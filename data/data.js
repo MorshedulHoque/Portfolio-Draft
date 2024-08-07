@@ -1,8 +1,11 @@
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaMedium } from "react-icons/fa6";
-import { RiTailwindCssFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
+import HTML_CANVAS_LOGO from "../public/logo/html-canvas.png";
+import LOCALIZATION_LOGO from "../public/logo/localization.png";
+import NEXT_JS_LOGO from "../public/logo/next-js-logo.png";
+import REACTJS_LOGO from "../public/logo/react-logo.png";
+import TAILWINDCSS_LOGO from "../public/logo/tailwindcss.png";
 import { BZM_GRAPHICS_URL, MASKBG_URL, OJIEAME_URL } from "./links";
 
 const workExperienceData = [
@@ -151,10 +154,10 @@ const projectsData = [
     techStack: [
       {
         name: "Next.js",
-        icon: <TbBrandNextjs size={23} />,
+        icon: NEXT_JS_LOGO,
       },
-      { name: "Tailwind CSS", icon: <RiTailwindCssFill size={23} /> },
-      { name: "Localization", icon: <TbBrandNextjs /> },
+      { name: "Tailwind CSS", icon: TAILWINDCSS_LOGO },
+      { name: "Localization", icon: LOCALIZATION_LOGO },
     ],
   },
   {
@@ -166,9 +169,9 @@ const projectsData = [
     imageAlt: "MASKBG",
     url: MASKBG_URL,
     techStack: [
-      { name: "HTML5 Canvas", icon: <TbBrandNextjs /> },
-      { name: "Next.js", icon: <TbBrandNextjs /> },
-      { name: "Tailwind.css", icon: <TbBrandNextjs /> },
+      { name: "HTML5 Canvas", icon: HTML_CANVAS_LOGO },
+      { name: "Next.js", icon: NEXT_JS_LOGO },
+      { name: "Tailwind.css", icon: TAILWINDCSS_LOGO },
     ],
   },
   {
@@ -180,8 +183,8 @@ const projectsData = [
     imageAlt: "Ojieame",
     url: OJIEAME_URL,
     techStack: [
-      { name: "React.js", icon: <TbBrandNextjs /> },
-      { name: "Tailwind CSS", icon: <TbBrandNextjs /> },
+      { name: "React.js", icon: REACTJS_LOGO },
+      { name: "Tailwind CSS", icon: TAILWINDCSS_LOGO },
     ],
   },
 ];

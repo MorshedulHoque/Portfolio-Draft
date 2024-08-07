@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .tb {
+.tb {
   border: 1px solid red;
 }
 
 .tc {
   background-color: rgb(254 202 202);
-} */
+}
 
 html {
   scroll-behavior: smooth;

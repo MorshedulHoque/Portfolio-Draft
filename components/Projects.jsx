@@ -15,8 +15,8 @@ export default function Projects() {
           .map((data) => <Project data={data} key={data?.id} />)}
 
       <div className="mt-10 flex justify-center">
-        <Link href="/portfolio" target="_blank" className="underline">
-          View All
+        <Link href="/portfolio" className="underline">
+          View All Projects
         </Link>
       </div>
     </div>
