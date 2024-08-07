@@ -1,5 +1,6 @@
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaMedium } from "react-icons/fa6";
+import { RiTailwindCssFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { BZM_GRAPHICS_URL, MASKBG_URL, OJIEAME_URL } from "./links";
@@ -150,9 +151,9 @@ const projectsData = [
     techStack: [
       {
         name: "Next.js",
-        icon: <TbBrandNextjs />,
+        icon: <TbBrandNextjs size={23} />,
       },
-      { name: "Tailwind CSS", icon: <TbBrandNextjs /> },
+      { name: "Tailwind CSS", icon: <RiTailwindCssFill size={23} /> },
       { name: "Localization", icon: <TbBrandNextjs /> },
     ],
   },
