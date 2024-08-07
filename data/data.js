@@ -1,6 +1,7 @@
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaMedium } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
 import { BZM_GRAPHICS_URL, MASKBG_URL, OJIEAME_URL } from "./links";
 
 const workExperienceData = [
@@ -142,11 +143,18 @@ const projectsData = [
     id: 1,
     title: "bZm Graphics",
     description:
-      "bZm Graphics Ltd. is a Visual Content Retouching Company for E-commerce, Studios and Brands.",
+      "bZm Graphics Ltd. is a Visual Content Retouching Company for E-commerce, Studios, and Brands.",
     imageSrc: "/images/bzm.png",
     imageAlt: "bZm Graphics",
     url: BZM_GRAPHICS_URL,
-    techStack: ["Next.js", "Tailwind CSS", "Localization"],
+    techStack: [
+      {
+        name: "Next.js",
+        icon: <TbBrandNextjs />,
+      },
+      { name: "Tailwind CSS", icon: <TbBrandNextjs /> },
+      { name: "Localization", icon: <TbBrandNextjs /> },
+    ],
   },
   {
     id: 2,
@@ -156,7 +164,11 @@ const projectsData = [
     imageSrc: "/images/remove-bg.png",
     imageAlt: "MASKBG",
     url: MASKBG_URL,
-    techStack: ["HTML5 Canvas", "Next.js", "Tailwind.css"],
+    techStack: [
+      { name: "HTML5 Canvas", icon: <TbBrandNextjs /> },
+      { name: "Next.js", icon: <TbBrandNextjs /> },
+      { name: "Tailwind.css", icon: <TbBrandNextjs /> },
+    ],
   },
   {
     id: 3,
@@ -166,7 +178,10 @@ const projectsData = [
     imageSrc: "/images/ojieame.webp",
     imageAlt: "Ojieame",
     url: OJIEAME_URL,
-    techStack: ["React.js", "Tailwind CSS"],
+    techStack: [
+      { name: "React.js", icon: <TbBrandNextjs /> },
+      { name: "Tailwind CSS", icon: <TbBrandNextjs /> },
+    ],
   },
 ];
 

@@ -9,9 +9,10 @@ export default function Projects() {
         Projects
       </h2>
 
-      {projectsData?.slice(0, 2).map((data) => (
-        <Project data={data} key={data?.id} />
-      ))}
+      {projectsData.length > 0 &&
+        projectsData
+          ?.slice(0, 2)
+          .map((data) => <Project data={data} key={data?.id} />)}
 
       <div className="mt-10 flex justify-center">
         <Link href="/portfolio" target="_blank" className="underline">

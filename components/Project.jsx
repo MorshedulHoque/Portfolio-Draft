@@ -31,9 +31,12 @@ export default function Project({ data }) {
               {data?.techStack?.map((tech, techIndex) => (
                 <span
                   key={techIndex}
-                  className="bg-violet-500 px-5 py-2 rounded-full"
+                  className="bg-violet-500 px-5 py-2 rounded-full flex items-center gap-2.5"
                 >
-                  {tech}
+                  <span className="bg-black p-2 rounded-full flex items-center">
+                    {tech?.icon}
+                  </span>
+                  {tech?.name}
                 </span>
               ))}
             </div>
