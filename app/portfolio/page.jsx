@@ -19,6 +19,7 @@ export default function Portfolio() {
       </div>
 
       <p className="font-semibold mb-3">
+        <span>⚡️ </span>
         Real-Life Project with Extensive User Engagement
       </p>
       <p className="max-w-2xl text-secondary">
