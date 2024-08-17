@@ -11,7 +11,7 @@ export default function Navbar() {
         >
           <div className="flex items-center justify-between">
             <Link className="flex-none text-xl font-semibold " href="/">
-              Taib Islam_
+              A S M Morshedul Hoque (Utsho)_
             </Link>
             <div className="sm:hidden">
               <button

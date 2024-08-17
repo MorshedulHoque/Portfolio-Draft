@@ -5,7 +5,7 @@ import { fadeInLeft, fadeInRight } from "@/utils/animation";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import HeroImage from "../public/taib-islam-color-blue.png";
+import HeroImage from "../public/utsho-dp.jpg";
 
 export default function Hero() {
   return (
@@ -19,10 +19,10 @@ export default function Hero() {
         >
           <div>
             <h1 className="text-3xl lg:text-5xl font-bold leading-tight">
-              Taib Islam
+              A S M Morshedul Hoque (Utsho)
               <span className="text-highlight">_</span>
             </h1>
-            <h2 className="text-xl lg:text-3xl">Web Developer</h2>
+            <h2 className="text-xl lg:text-3xl">Data Enthusiast</h2>
           </div>
           <p className="lg:text-xl">{content.hero.description}</p>
 
@@ -50,7 +50,7 @@ export default function Hero() {
           <Image
             className="rounded-full"
             src={HeroImage}
-            alt="Taib Islam"
+            alt="A S M Morshedul Hoque (Utsho)"
             width={300}
             height={300}
             draggable={false}

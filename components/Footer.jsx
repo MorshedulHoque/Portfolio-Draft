@@ -12,21 +12,21 @@ export default function Footer() {
       <div className="flex lg:flex-row flex-col justify-between wrapper py-10 lg:p-20 gap-10 lg:gap-40">
         <div className="grow space-y-1">
           <div className="mb-3">
-            <h2 className="text-xl">Taib Islam</h2>
-            <p className="font-light">Web Developer</p>
+            <h2 className="text-xl">A S M Morshedul Hoque (Utsho)</h2>
+            <p className="font-light">Data Enthusiast</p>
           </div>
 
           <div className="flex items-center gap-2">
             <IoLocationOutline size={20} />
-            <span className="font-light ">Motijheel, Dhaka.</span>
+            <span className="font-light ">South Banasree, Dhaka.</span>
           </div>
           <div className="flex items-center gap-2">
             <LuMail size={20} />
-            <span className="font-light ">mailtaibislam@gmail.com</span>
+            <span className="font-light ">asmmorshedulhoque@gmail.com</span>
           </div>
           <div className="flex items-center gap-2">
             <LuPhone size={20} />
-            <span className="font-light ">01675884882</span>
+            <span className="font-light ">01705602383</span>
           </div>
         </div>
 
@@ -86,7 +86,7 @@ export default function Footer() {
         <p>
           Designed & Developed with ❤️ by{" "}
           <Link href="/" className="hover:underline ">
-            Taib Islam Dipu.
+            A S M .
           </Link>
         </p>
         <p>
